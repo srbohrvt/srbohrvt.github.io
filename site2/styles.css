@@ -160,7 +160,9 @@ body {
     margin-right: 20px;
     margin-bottom: 10px;
     margin-top: 10px;*/
-    margin: 7px 20px auto 15px;
+    /*margin-left: 10px;
+    margin-right: 10px;*/
+    margin: 7px 10px auto 10px;
     font-size: 1.1em;
 }
 
