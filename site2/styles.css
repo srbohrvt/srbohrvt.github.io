@@ -170,17 +170,21 @@ a {
     color: white;
 }
 .down {
-    position: relative;
+    position: absolute;
+    bottom: 10px;
     z-index: 20;
     height: 40px;
     width: 80px;
     margin-left: auto;
-    margin-right: auto;
+   /* margin-right: auto;*/
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
 }
 .down img {
-    position: relative;
+    /*position: relative;*/
     transition: all 1s ease-in-out;
-    top: 630%;
+    /*top: 630%;*/
     z-index: 20;
     height: 40px;
     width: 80px;
@@ -340,8 +344,8 @@ a {
     padding: 0;
     /*width: 1000px;*/
     margin-top: 60px;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -352,8 +356,8 @@ a {
     border: 2px solid #e0e0e0;
     border-radius: 50px;
     text-align: center;
-    /*padding-left: 10px;
-    padding-right: 10px;*/
+    margin-left: 10px;
+    margin-right: 10px;
     padding: 15px;
     width: 200px;
     display: flex;
@@ -397,6 +401,9 @@ a {
 .googleMap-phone {
     display: none;
 }
+.googleMap-phone2 {
+    display: none;
+}
 .bar {
     margin-top: 30px;
     height: 330px;
@@ -406,7 +413,7 @@ a {
 
 .contacts-fifth {
     margin: 20px auto 20px auto;
-    width: 40vw;
+    width: 80%;
 }
 .contacts-item {
     margin-bottom: 10px;
@@ -427,8 +434,314 @@ a {
     margin-top: -5px;
 
 }
+.googleMap-phone3 {
+    display: none;
+}
 
-@media (max-width: 450px)
+@media (max-width: 1100px)
+{
+    body {
+        font-size: 20px;
+    }
+    .burger-menu {
+        display: block;
+    }
+    .nav {
+        display: none;
+    }
+    .naming {
+        font-size: 2em;
+        margin-top: 50px;
+    }
+    .logo {
+        height: 200px;
+        width: 200px;
+    }
+    .logo img {
+        height: 200px;
+        width: 200px;
+    }
+    .second {
+        margin-top: 40px;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 60px;
+    }
+    .about_text {
+        text-align: justify;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .third {
+        margin-top: 3vh;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 3%;
+        width: 90vw;
+    }
+    .ser {
+        margin-bottom: 30px;
+    }
+    .fabout_header {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .fabout_header::after {
+        margin-bottom: 0;
+    }
+    .fabout_text {
+        color: #c2c2c2;
+        margin-top: 20px;
+        /*margin: 40px 20 60px 150px;*/
+        text-align: left;
+        font-size: 1.2em;
+        line-height: 1.3;
+        font-weight: 300;
+
+        -webkit-column-width: 200px;
+        -moz-column-width: 200px;
+        column-width: 200px;
+        -webkit-column-count: 0;
+        -moz-column-count: 0;
+        column-count: 0;
+        -webkit-column-gap: 50px;
+        -moz-column-gap: 50px;
+        column-gap: 50px;
+    }
+    .forth {
+        padding-top: 10%;
+        padding-bottom: 15%;
+    }
+    .fabout_header p {
+        margin-top: 0;
+    }
+    .list {
+        margin-top: 10%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+        position: relative;
+        color: #c5c5c5;
+        text-align: center;
+        /*display: block;
+        
+        display: flex;
+        justify-content: space-between;*/
+        font-size: 0.8em;
+        font-weight: 300;
+    }
+    .item {
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .fifth {
+        margin-top: 60px;
+    }
+    .map {
+        width: 450px;
+        height: auto;
+        padding-bottom: 40px;
+        display: block;
+    }
+    .bar {
+        display: none;
+    }
+    .googleMap {
+        display: none;
+    }
+    .googleMap-phone {
+        display: none;
+    }
+    .googleMap-phone2 {
+        display: none;
+    }
+    .googleMap-phone3 {
+        display: block;
+        padding: 10px;
+    }
+
+    /*.contacts-fifth {
+        margin: 20px auto 20px auto;
+        width: 80%;
+    }
+    .contacts-item {
+        margin-bottom: 10px;
+        width: 50%;
+    }*/
+    .contacts-header {
+        text-align: center;
+        color:  #fcfcfc;
+        font-size: 1.3em;
+        font-weight: 500;
+        margin-top: 40px;
+    
+    }
+    .contacts-content {
+        text-align: center;
+        color:  #c5c5c5;
+    }
+    .contacts-content p {
+        margin-top: -5px;
+    
+    }
+}
+
+
+@media (max-width: 1042px)
+{
+    body {
+        font-size: 20px;
+    }
+    .burger-menu {
+        display: block;
+    }
+    .nav {
+        display: none;
+    }
+    .naming {
+        font-size: 2em;
+        margin-top: 50px;
+    }
+    .logo {
+        height: 200px;
+        width: 200px;
+    }
+    .logo img {
+        height: 200px;
+        width: 200px;
+    }
+    .second {
+        margin-top: 40px;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 60px;
+    }
+    .about_text {
+        text-align: justify;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .row {
+        display: none;
+    }
+    .third {
+        margin-bottom: 15%;
+    }
+    .ser-for-mobile {
+        display:  block;
+    }
+    .ser-for-mobile p {
+        font-size: 1.2em;
+        background: rgb(66, 66, 77);
+        box-shadow: 4px 4px 6px rgb(163, 162, 161);
+        color: #e0e0e0;
+        text-align: center;
+        padding: 15px 10px 15px 10px;
+        border-radius: 15px;
+    }
+    .fabout_header {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .fabout_header::after {
+        margin-bottom: 0;
+    }
+    .fabout_text {
+        color: #c2c2c2;
+        margin-top: 20px;
+        /*margin: 40px 20 60px 150px;*/
+        text-align: left;
+        font-size: 1.2em;
+        line-height: 1.3;
+        font-weight: 300;
+
+        -webkit-column-width: 200px;
+        -moz-column-width: 200px;
+        column-width: 200px;
+        -webkit-column-count: 0;
+        -moz-column-count: 0;
+        column-count: 0;
+        -webkit-column-gap: 50px;
+        -moz-column-gap: 50px;
+        column-gap: 50px;
+    }
+    .forth {
+        padding-top: 10%;
+        padding-bottom: 15%;
+    }
+    .fabout_header p {
+        margin-top: 0;
+    }
+    .list {
+        margin-top: 10%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+        position: relative;
+        color: #c5c5c5;
+        text-align: center;
+        display: block;
+    }
+    .item {
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .fifth {
+        margin-top: 60px;
+    }
+    .map {
+        width: 450px;
+        height: auto;
+        padding-bottom: 40px;
+       /* margin: 80px auto 50px auto;*/
+        display: block;
+    }
+    .bar {
+        display: none;
+    }
+    .googleMap {
+        display: none;
+    }
+    .googleMap-phone {
+        display: none;
+    }
+    .googleMap-phone2 {
+        display: none;
+    }
+    .googleMap-phone3 {
+        display: block;
+        padding: 10px;
+    }
+
+   /* .contacts-fifth {
+        margin: 20px auto 20px auto;
+        width: 50%;
+    }
+    .contacts-item {
+        margin-bottom: 10px;
+        width: none;
+    }*/
+    .contacts-header {
+        text-align: center;
+        color:  #fcfcfc;
+        font-size: 1.3em;
+        font-weight: 500;
+        margin-top: 40px;
+    
+    }
+    .contacts-content {
+        text-align: center;
+        color:  #c5c5c5;
+    }
+    .contacts-content p {
+        margin-top: -5px;
+    
+    }
+}
+
+@media (max-width: 480px)
 {
     .burger-menu {
         display: block;
@@ -546,6 +859,9 @@ a {
         display: block;
         padding: 10px;
     }
+    .googleMap-phone3 {
+        display: none;
+    }
 
     .contacts-fifth {
         margin: 20px auto 20px auto;
@@ -583,7 +899,7 @@ a {
         display: none;
     }
     .naming {
-        font-size: 2em;
+        font-size: 1.7em;
         margin-top: 50px;
     }
     .logo {
@@ -649,6 +965,7 @@ a {
         padding-bottom: 10%;
     }
     .fabout_header p {
+        font-size: 30px;
         margin-top: 0;
     }
     .list {
@@ -685,6 +1002,9 @@ a {
         display: none;
     }
     .googleMap-phone2 {
+        display: none;
+    }
+    .googleMap-phone3 {
         display: none;
     }
     .googleMap-phone {
