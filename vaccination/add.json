@@ -1,0 +1,194 @@
+{
+    "appid0004-0": {
+        "id": "appid3",
+        "time": "2021-01-04 15:00",
+        "slots": 1,
+        "users": [
+            "5ff459a992d2a"
+        ]
+    },
+    "appid0004-1": {
+        "id": "appid4",
+        "time": "2021-01-04 17:00",
+        "slots": 2,
+        "users": [
+            "5ff99d07aad4c"
+        ]
+    },
+    "appid0005-0": {
+        "id": "appid5",
+        "time": "2021-01-05 12:00",
+        "slots": 1,
+        "users": [
+            "5ff99d9e2dfe1"
+        ]
+    },
+    "appid0006-0": {
+        "id": "appid6",
+        "time": "2021-01-06 11:00",
+        "slots": 3,
+        "users": [
+            "5ff97d9e0dfm1"
+        ]
+    },
+    "appid0007-0": {
+        "id": "appid7",
+        "time": "2021-01-07 19:00",
+        "slots": 1,
+        "users": [
+            "5ffaf1eeda603"
+        ]
+    },
+    "appid0008-0": {
+        "id": "appid8",
+        "time": "2021-01-08 16:00",
+        "slots": 1,
+        "users": []
+    },
+    "appid0009-0": {
+        "id": "appid9",
+        "time": "2021-01-09 15:00",
+        "slots": 1,
+        "users": []
+    },
+    "appid0010-0": {
+        "id": "appid10",
+        "time": "2021-01-10 12:00",
+        "slots": 3,
+        "users": []
+    },
+    "appid0011-0": {
+        "id": "appid11",
+        "time": "2021-01-11 11:00",
+        "slots": 4,
+        "users": []
+    },
+    "appid0012-0": {
+        "id": "appid12",
+        "time": "2021-01-12 19:00",
+        "slots": 1,
+        "users": []
+    },
+    "appid0013-0": {
+        "id": "appid13",
+        "time": "2021-01-13 16:00",
+        "slots": 1,
+        "users": []
+    },
+    "appid0014-0": {
+        "id": "appid14",
+        "time": "2021-01-14 15:00",
+        "slots": 1,
+        "users": [
+            "5ffaeeda821a6"
+        ]
+    },
+    "appid0015-0": {
+        "id": "appid15",
+        "time": "2021-01-15 12:00",
+        "slots": 1,
+        "users": []
+    },
+    "appid0016-0": {
+        "id": "appid16",
+        "time": "2021-01-16 11:00",
+        "slots": 1,
+        "users": []
+    },
+    "appid0017-0": {
+        "id": "appid17",
+        "time": "2021-01-17 19:00",
+        "slots": 1,
+        "users": []
+    },
+    "appid0018-0": {
+        "id": "appid18",
+        "time": "2021-01-18 16:00",
+        "slots": 1,
+        "users": []
+    },
+    "appid0019-0": {
+        "id": "appid19",
+        "time": "2021-01-19 15:00",
+        "slots": 1,
+        "users": []
+    },
+    "appid0020-0": {
+        "id": "appid20",
+        "time": "2021-01-20 12:00",
+        "slots": 1,
+        "users": []
+    },
+    "appid0021-0": {
+        "id": "appid21",
+        "time": "2021-01-21 11:00",
+        "slots": 2,
+        "users": []
+    },
+    "appid0022-0": {
+        "id": "appid22",
+        "time": "2021-01-22 19:00",
+        "slots": 1,
+        "users": [
+            "5ffb27d761961"
+        ]
+    },
+    "appid0023-0": {
+        "id": "appid23",
+        "time": "2021-01-23 16:00",
+        "slots": 1,
+        "users": []
+    },
+    "appid0024-0": {
+        "id": "appid24",
+        "time": "2021-01-24 16:00",
+        "slots": 2,
+        "users": []
+    },
+    "appid0025-0": {
+        "id": "appid25",
+        "time": "2021-01-25 12:00",
+        "slots": 3,
+        "users": []
+    },
+    "appid0026-0": {
+        "id": "appid26",
+        "time": "2021-01-26 19:00",
+        "slots": 1,
+        "users": []
+    },
+    "appid0027-0": {
+        "id": "appid27",
+        "time": "2021-01-27 15:00",
+        "slots": 2,
+        "users": []
+    },
+    "appid0004-2": {
+        "id": "appid0004-2",
+        "time": "2021-01-04 08:00",
+        "slots": "2",
+        "users": []
+    },
+    "appid0022-1": {
+        "id": "appid0022-1",
+        "time": "2021-01-22 11:30",
+        "slots": "4",
+        "users": [
+            "5ff8417aa2c14",
+            "5ffb28ee75ca5"
+        ]
+    },
+    "appid0110-0": {
+        "id": "appid0110-0",
+        "time": "2021-02-10 07:40",
+        "slots": "4",
+        "users": []
+    },
+    "": null,
+    "appid0030-0": {
+        "id": "appid0030-0",
+        "time": "2021-01-30 17:00",
+        "slots": "2",
+        "users": []
+    }
+}

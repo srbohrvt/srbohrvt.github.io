@@ -1,0 +1,134 @@
+{
+    "5ff459a992d2a": {
+        "ssn": "123456789",
+        "email": "uran@yandex.ru",
+        "adress": "kazan",
+        "password": "$2y$10$K3fL9QiXVG204i0CBZHgJ.9\/ZMM99rhXOvCPKQiPEC54v3lGLx5s6",
+        "fullname": "Albert Nasretdinov",
+        "roles": [
+            "user"
+        ],
+        "appoint": "appid0004-0"
+    },
+    "5ff8417aa2c14": {
+        "ssn": "123456987",
+        "email": "uran3011@gmail.com",
+        "adress": "Tatarstan",
+        "password": "$2y$10$.dnVWQLYn0LvURdTsa7p1uzJTEESEExpsxh0hU6iqx2MJ803\/rat.",
+        "fullname": "Danil Nasretdinov",
+        "roles": [
+            "user"
+        ],
+        "appoint": "appid0022-1"
+    },
+    "5ff99d07aad4c": {
+        "ssn": "789456321",
+        "email": "sat@test.com",
+        "adress": "p2",
+        "password": "$2y$10$nUmz1MCsCrms8HwBtXCiDe0CUsiIdN3n44rJxgV3Xbo\/1Vrzb4e1a",
+        "fullname": "Marko Romanowic",
+        "roles": [
+            "user"
+        ],
+        "appoint": "appid0004-1"
+    },
+    "5ff99d9e2dfe1": {
+        "ssn": "123456987",
+        "email": "cbv6d3@inf.elte.hu",
+        "adress": "Tatarstan",
+        "password": "$2y$10$.dnVWQLYn0LvURdTsa7p1uzJTEESEExpsxh0hU6iqx2MJ803\/rat.",
+        "fullname": "Adel Nasretdinov",
+        "roles": [
+            "user"
+        ],
+        "appoint": "appid0005-0"
+    },
+    "5ff97d9e0dfm1": {
+        "ssn": "123456987",
+        "email": "a@mail.hu",
+        "adress": "Tatarstan",
+        "password": "$2y$10$.dnVWQLYn0LvURdTsa7p1uzJTEESEExpsxh0hU6iqx2MJ803\/rat.",
+        "fullname": "Marija Nady",
+        "roles": [
+            "user"
+        ],
+        "appoint": "appid0006-0"
+    },
+    "5ff9ab5b57f82": {
+        "ssn": "789456123",
+        "email": "admin@nemkovid.hu",
+        "adress": "p1",
+        "password": "$2y$10$W65l5rEDt2F22Mj9aaPCVuzw\/c9COP.Qud4NjFs7a2XHSbkAMmuLG",
+        "fullname": "Admin Adminowski",
+        "roles": [
+            "admin"
+        ],
+        "appoint": ""
+    },
+    "5ff9ba9ac0114": {
+        "ssn": "789654123",
+        "email": "design@important.iknow",
+        "adress": "Sorry",
+        "password": "$2y$10$Fw.KJw3UigHvY.QbCUc.\/up\/TWDibWgyz7sDU2V6.r6uvE7jLCbsa",
+        "fullname": "Don't have time for Design",
+        "roles": [
+            "user"
+        ],
+        "appoint": "appid0006-0"
+    },
+    "5ffaeeda821a6": {
+        "ssn": "785412369",
+        "email": "d@j.t",
+        "adress": "White House",
+        "password": "$2y$10$5Y09N5fJLEy55BC0N5bHseeCWY9vDCtq1\/hyrVNLYQfDAJrzutT1K",
+        "fullname": "Donald J Tramp",
+        "roles": [
+            "user"
+        ],
+        "appoint": "appid0014-0"
+    },
+    "5ffaf1eeda603": {
+        "ssn": "098765401",
+        "email": "852@qwerty.com",
+        "adress": "dom",
+        "password": "$2y$10$9\/CjFWpcD2EGuiI8KpXOC.EWr2TFzaYSXB38KqGsjPBoK.h5EvZOu",
+        "fullname": "BORIS GODUNOV",
+        "roles": [
+            "user"
+        ],
+        "appoint": "appid0007-0"
+    },
+    "5ffb265360a13": {
+        "ssn": "124567892",
+        "email": "q@w.erty",
+        "adress": "Russia",
+        "password": "$2y$10$s6WwDCD4iA3DiScVN8Kg2OrXzJdF.dOaeCaK4O1Rmoh0K\/qTSTv36",
+        "fullname": "I Tired",
+        "roles": [
+            "user"
+        ],
+        "appoint": ""
+    },
+    "5ffb27d761961": {
+        "ssn": "124256789",
+        "email": "q@w.e",
+        "adress": "redhgic",
+        "password": "$2y$10$.UdHKVToahj1RxycV4DIVOATvmpOwJLwWGFOI.b4GwRgNqgy3\/3oS",
+        "fullname": "w e",
+        "roles": [
+            "user"
+        ],
+        "appoint": "appid0022-0"
+    },
+    "5ffb28ee75ca5": {
+        "ssn": "987654321",
+        "email": "q2@w.e",
+        "adress": "rfc2",
+        "password": "$2y$10$XbwRijtEmvLCk6yWIFmmK.xPvcjqg9JyheLY3WEgxtE3BEQfy6ZDW",
+        "fullname": "lika Net",
+        "roles": [
+            "user"
+        ],
+        "appoint": "appid0022-1"
+    }
+}

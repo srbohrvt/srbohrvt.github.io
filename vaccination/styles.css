@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+}
+.slots {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100px;
+    height: 40px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+
+}
+.slot {
+    padding: 2px;
+    margin-right: 5px;
+    margin-bottom: 2px;
+    width: 35px;
+    height: 15px;
+    font-size: 15px;
+    border-radius: 20%;
+    cursor: pointer;
+}
+.td-calendar {
+    padding-bottom: 15px;
+}
+.slot_available {
+    background-color:rgb(162, 255, 149);
+}
+.slot_Unavailable {
+    background-color:rgb(255, 108, 82);
+}
+button {
+    width: 150px;
+    height: 50px;
+    background-color:rgb(253, 232, 175);
+}
+.log, .reg {
+    display: inline;
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 150px;
+    height: 50px;
+    background-color:rgb(253, 232, 175);
+}
+.modal {
+    display: none; /* Модальное окно скрыто по умолчанию */
+    position: fixed; /* Фикс. Позиция на главной странице */
+    z-index: 1; /* Отображение на заднем плане */
+    left: 0;
+    top: 0;
+    width: 100%; /* 100% по ширине */
+    height: 100%; /* 100% по высоте */
+    overflow: auto; /* Включить прокрутку, если необходимо */
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+/* Содержание модального окна*/
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% от верха и центрировано */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Может быть больше и меньше, зависит от размеров экрана */
+    box-shadow: 5px 10px 5px #666; /*Добавить тень */
+}
+/* Основные свойства кнопки «Закрыть» */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+/* Свойства кнопки «Закрыть», когда вы наводите на нее курсор или взаимодействуете с ней */
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal {
+    display: none; /* Модальное окно скрыто по умолчанию */
+    position: fixed; /* Фикс. Позиция на главной странице */
+    z-index: 1; /* Отображение на заднем плане */
+    left: 0;
+    top: 0;
+    width: 100%; /* 100% по ширине */
+    height: 100%; /* 100% по высоте */
+    overflow: auto; /* Включить прокрутку, если необходимо */
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+    /* Содержание модального окна*/
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% от верха и центрировано */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Может быть больше и меньше, зависит от размеров экрана */
+    box-shadow: 5px 10px 5px #666; /*Добавить тень */
+}
+    /* Основные свойства кнопки «Закрыть» */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+    /* Свойства кнопки «Закрыть», когда вы наводите на нее курсор или взаимодействуете с ней */
+.close:hover,
+.close:focus {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+
+label {
+    display: block;
+    width: 100px;
+}
