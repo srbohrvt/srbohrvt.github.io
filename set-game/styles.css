@@ -1,0 +1,456 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #ececec;
+    font-family: 'Roboto', sans-serif;
+
+}
+.name {
+    display: block;
+    width: 150px;
+    font-size: 50px;
+    margin: 15px auto 0 auto;
+    text-align: center;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: rgb(85, 85, 85);
+}
+.rules {
+    display: block;
+    width: 100px;
+    font-size: 20px;
+    margin: 15px auto 15px auto;
+    text-align: center;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.numbersOfPlayers {
+    display: block;
+    width: 150px;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 40px auto 17px auto;
+    text-align: center;
+    color: rgb(85, 85, 85);
+}
+.numbers {
+    height: 80px;
+    width: 800px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: -10px -10px 15px rgba(255,255,255,0.55), 10px 10px 15px rgba(70,70,70,0.12);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    border-radius: 50px;
+}
+.starting input[type="radio"] {
+    display: none;
+}
+.numbers label {
+    font-size: 26px;
+    font-weight: 700;
+    color: #505050;
+    border-radius: 50px;
+    padding: 15px 25px;
+}
+input[type="radio"]:checked + label {
+    box-shadow: inset -10px -10px 15px rgba(255,255,255,0.55), inset 10px 10px 15px rgba(70,70,70,0.12);
+    color: rgb(255, 156, 110);
+    text-shadow: 3px 3px 4px rgba(255, 197, 171, 0.603);
+}
+
+.names {
+    width: 100px;
+    height: 60px;
+    font-size: 15px;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    color: rgb(58, 58, 58);
+    align-items: center;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.names input[type="text"] {
+    width: 65px;
+    box-shadow: inset 5px 5px 7px rgba(70,70,70,0.12), inset -5px -5px 7px rgba(255,255,255,0.55);
+    transition: all 0.3s ease-in-out;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    border-radius: 40px;
+    padding: 10px;
+    margin: 10px 10px 10px 10px;
+    background-color: #ececec;
+    color: rgb(134, 134, 134);
+    font-weight: 500;
+    text-align: center;
+
+}
+.setPlayersNames {
+    display: block;
+    color: rgb(255, 255, 255);
+    height: 50px;
+    width: 140px;
+    box-shadow: -10px -10px 10px rgb(255, 255, 255), 10px 10px 15px rgba(70, 70, 70, 0.233);
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+    margin-top: 7px;
+    border-radius: 50px;
+    border: none;
+    font-size: 20px;
+    transition: all 0.2s ease-in-out;
+    background-color: rgb(255, 156, 110);
+}
+.setPlayersNames:hover {
+    box-shadow: -5px -5px 7px rgba(255, 255, 255, 0.658), 5px 5px 7px rgba(70,70,70,0.12);
+    cursor: pointer;
+}
+button, 
+button:active, 
+button:focus {
+    outline: none;
+}
+.pNames {
+    display: block;
+    width: 300px;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 15px auto 5px auto;
+    text-align: center;
+    color: rgb(85, 85, 85);
+}
+
+
+
+
+.pgameMode {
+    display: block;
+    width: 900px;
+    font-size: 18px;
+    font-weight: 200;
+    margin: 50px auto 10px auto;
+    text-align: center;
+    color: rgb(146, 146, 146);
+}
+.gameMode {
+    height: 80px;
+    width: 400px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: -10px -10px 15px rgba(255,255,255,0.55), 10px 10px 15px rgba(70,70,70,0.12);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 50px;
+}
+.gameMode label {
+    font-size: 18px;
+    font-weight: 500;
+    color: #505050;
+    border-radius: 50px;
+    padding: 15px 25px;
+}
+input[type="radio"]:checked + label {
+    box-shadow: inset -10px -10px 15px rgba(255,255,255,0.55), inset 10px 10px 15px rgba(70,70,70,0.12);
+    color: rgb(255, 156, 110);
+    text-shadow: 3px 3px 4px rgba(255, 197, 171, 0.603);
+}
+
+
+.misc {
+    height: 520px;
+    width: 700px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: -10px -10px 15px rgba(255,255,255,0.55), 10px 10px 15px rgba(70,70,70,0.12);
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 50px;
+}
+.pmisc {
+    color: #727272;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    padding: 15px 10px 10px 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.pED {
+    display: block;
+    width: 400px;
+    font-size: 18px;
+    font-weight: 200;
+    margin: 20px auto 10px auto;
+    text-align: center;
+    color: rgb(175, 175, 175);
+}
+input[type="checkbox"] {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    /*position: relative;*/
+    width: 80px;
+    height: 40px;
+    -webkit-appearance: none;
+    appearance: none;
+    background: #ececec;
+    outline: none;
+    border-radius: 20px;
+    transition: .5s;
+    box-shadow: inset -5px -5px 7px rgba(255,255,255,0.55), inset 5px 5px 7px rgba(70,70,70,0.12);
+}
+input:checked[type="checkbox"] {
+    background:  rgb(255, 156, 110);
+    box-shadow: inset -1px -1px 2px rgba(255,255,255,0.55), inset 5px 5px 7px rgba(70,70,70,0.12);
+
+}
+input[type="checkbox"]::before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    transform: scale(1.2);
+    background: rgb(255, 255, 255);
+    box-shadow: -3px -3px 5px rgba(255,255,255,0.55), 5px 5px 7px rgba(70,70,70,0.12);
+
+}
+input:checked[type="checkbox"]:before {
+    left: 40px;
+    box-shadow: 5px 5px 7px rgba(70,70,70,0.12);
+
+}
+.miscSets {
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.enableLabel {
+    color: rgb(124, 124, 124);
+}
+.enableDisable {
+    margin-left: 170px;
+    margin-right: 170px;
+    width: 360px;
+    display: flex;
+    justify-content: space-around;
+}
+.enableLabel0 {
+    color: rgb(124, 124, 124);
+}
+.enableDisable0 {
+    margin-left: 130px;
+    margin-right: 120px;
+    width: 480px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.isSet, .showSet, .noSet {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.e1, .d1, .e2, .d2, .au3, .bb3 {
+    margin-top: 21px;
+    font-size: 0.9em;
+}
+.e1 {
+    color: #ececec;
+}
+.e2 {
+    color: #ececec;
+}
+.bb3 {
+    color: #ececec;
+}
+
+.btnStart {
+    display: block;
+    
+    height: 100px;
+    width: 200px;
+    color: rgb(255, 255, 255);
+    box-shadow: -10px -10px 10px rgb(255, 255, 255), 10px 10px 15px rgba(70, 70, 70, 0.233);
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 50px;
+    border: none;
+    font-size: 50px;
+    transition: all 0.2s ease-in-out;
+    background-color: rgb(255, 156, 110);
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.btnStart:hover {
+    box-shadow: -5px -5px 7px rgba(255, 255, 255, 0.658), 5px 5px 7px rgba(70,70,70,0.12);
+    cursor: pointer;
+}
+.btnStart p {
+    margin: 10px auto auto auto;
+}
+
+
+
+
+
+
+/*------------------------GAME----------------------------*/
+
+/*-----BUTTONS ON THE TOP-----*/
+
+.options {
+    width: 900px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.backToSettings {
+    display: block;
+    color: rgb(124, 124, 124);
+    height: 70px;
+    width: 150px;
+    box-shadow: -10px -10px 10px rgb(255, 255, 255), 10px 10px 15px rgba(70, 70, 70, 0.233);
+    padding: 10px;
+    text-align: center;
+    /*position: absolute;
+    left: 50px;
+    top: 50px;*/
+    border-radius: 50px;
+    border: none;
+    font-size: 18px;
+    transition: all 0.2s ease-in-out;
+    background-color: rgb(255, 214, 195);
+}
+.backToSettings:hover {
+    box-shadow: -5px -5px 7px rgba(255, 255, 255, 0.658), 5px 5px 7px rgba(70,70,70,0.12);
+    cursor: pointer;
+}
+
+.add3, .isHereSet, .findSetHere {
+    display: block;
+    color: rgb(255, 255, 255);
+    box-shadow: -10px -10px 10px rgb(255, 255, 255), 10px 10px 15px rgba(70, 70, 70, 0.233);
+    height: 70px;
+    width: 150px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 50px;
+    border: none;
+    font-size: 18px;
+    transition: all 0.2s ease-in-out;
+    background-color: rgb(255, 170, 131);
+}
+.add3:hover, .isHereSet:hover, .findSetHere:hover {
+    box-shadow: -5px -5px 7px rgba(255, 255, 255, 0.658), 5px 5px 7px rgba(70,70,70,0.12);
+    cursor: pointer;
+}
+.deck {
+    width: 150px;
+    box-shadow: inset 5px 5px 7px rgba(70,70,70,0.12), inset -5px -5px 7px rgba(255,255,255,0.55);
+    transition: all 0.3s ease-in-out;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    border-radius: 40px;
+    padding: 10px;
+    background-color: #ececec;
+    color: rgb(134, 134, 134);
+    font-weight: 500;
+    text-align: center;
+}
+#board {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 170px;
+}
+
+.playersStat {
+    position: absolute;
+    top: 175px;
+    left: 50px;
+    float: left;
+    width: 290px;
+    box-shadow: inset 5px 5px 7px rgba(70,70,70,0.12), inset -5px -5px 7px rgba(255,255,255,0.55);
+    transition: all 0.2s ease-in-out;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    border-radius: 40px;
+    padding: 30px 40px 10px 40px;
+    background-color: #ececec;
+    color: rgb(134, 134, 134);
+    font-weight: 500;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 300;
+}
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.statNameSelected {
+    color:rgb(255, 156, 110);
+    text-shadow: 3px 3px 4px rgba(255, 197, 171, 0.603);
+}
+.statNameCannotBeSelected {
+    color:rgb(211, 211, 211);
+    text-shadow: 3px 3px 4px rgba(168, 168, 168, 0.603);
+}
+
+.game {
+    display: none;
+}
+table {
+    border: 1px solid #ececec;
+    border-collapse: collapse;
+}
+td, th {
+    border: 1px solid #ececec;
+    background: #747474;
+    padding: 10px;
+    width: 100px;
+    height: 133.050px;
+    align-items: center;
+}
+.tdSelected {
+    background: rgba(255, 197, 171, 0.603);
+}
+.tdSelectedByButton {
+    background: rgba(255, 245, 189, 0.603);
+}
+.showPlus3 {
+    display: none;
+}
+
+@media (max-width: 1450px)
+{
+    #board {
+        transform: translateX(-15%);
+    }
+}
+@media (max-width: 1200px)
+{
+    #board {
+        transform: translateX(-15%);
+    }
+    .playersStat {
+        left: 30px;
+    }
+}

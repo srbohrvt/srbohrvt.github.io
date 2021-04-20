@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <title>Set Game</title>
+</head>
+
+<body>
+  <div class="starting">
+    <div class="name">Set Game</div>
+    <a class="rules"
+      href="https://www.setgame.com/sites/default/files/instructions/SET%20INSTRUCTIONS%20-%20ENGLISH.pdf">GAME
+      RULES</a>
+    <p class="numbersOfPlayers">Number of players</p>
+    <p class="numbers">
+      <input name="numbers" type="radio" value="1" id="n1" checked><label for="n1">1</label>
+      <input name="numbers" type="radio" value="2" id="n2"><label for="n2">2</label>
+      <input name="numbers" type="radio" value="3" id="n3"><label for="n3">3</label>
+      <input name="numbers" type="radio" value="4" id="n4"><label for="n4">4</label>
+      <input name="numbers" type="radio" value="5" id="n5"><label for="n5">5</label>
+      <input name="numbers" type="radio" value="6" id="n6"><label for="n6">6</label>
+      <input name="numbers" type="radio" value="7" id="n7"><label for="n7">7</label>
+      <input name="numbers" type="radio" value="8" id="n8"><label for="n8">8</label>
+      <input name="numbers" type="radio" value="9" id="n9"><label for="n9">9</label>
+      <input name="numbers" type="radio" value="10" id="n10"><label for="n10">10</label>
+      <!--<button class="setPlayersNumber">Choose</button>-->
+    </p>
+    <p class="pNames">Set names of the player(s)</p>
+    <div class="names">
+      <input type="text" value="Player1">
+    </div>
+    <button class="setPlayersNames">Set Names</button>
+    <p class="pgameMode">Choose game mode <br> Practice - <i>all options are available, and there is no timer in a
+      one-player game</i> <br> Competitive - <i>the miscellaneous options aren't
+        available, and the one-player game has the timer enabled as well</i></p>
+    <div class="gameMode">
+      <input name="gameMode" type="radio" value="Practice" id="gm1" checked><label for="gm1">Practice <!--<i>(All options are available, and there is no timer in a
+        one-player game)</i>--></label>
+      <input name="gameMode" type="radio" value="Competitive" id="gm2"><label for="gm2">Competitive <!--<i>(The miscellaneous options aren't
+          available, and the one-player game has the timer enabled as well)</i>--></label>
+    </div>
+
+    <div class="misc">
+      <div class="pmisc">The miscellaneous options</div>
+      <div class="isSet">
+        <p class="pED">Enable or disable a button which tells if there is a SET in the current deal</p>
+        <div class="enableDisable">
+          <p class="enableLabel d1">DISABLE</p><input name="isSet" class="miscSets" type="checkbox" value="enable"><p class="enableLabel e1">ENABLE</p>
+        </div>
+      </div>
+      <div class="showSet">
+        <p class="pED">Enable or disable a button which shows a SET</p>
+        <div class="enableDisable">
+          <p class="enableLabel d2">DISABLE</p><input name="showSet" class="miscSets" type="checkbox" value="enable"><p class="enableLabel e2">ENABLE</p>
+        </div>
+      </div>
+      <div class="noSet">
+        <p class="pED">Automatic or button-based deal method for three new cards after no SET was discovered</p>
+        <div class="enableDisable0">
+          <p class="enableLabel0 au3">AUTOMATIC</p><input name="noSet" class="miscSets" type="checkbox" value="automatic"><p class="enableLabel bb3">BUTTON-BASED</p>
+        </div>
+      </div>
+    </div>
+    <div class="start">
+      <button class="btnStart"><p>START</p></button>
+    </div>
+  </div>
+
+
+  <div class="game">
+    <div class="options">
+      <button class="backToSettings" onClick="window.location.reload();">Back to settings</button>
+      <button class="add3">Add 3 cards</button>
+      <button class="isHereSet">Is here a set?</button>
+      <button class="findSetHere">Find Set</button>
+
+      <div class="deck">
+        <p class="pdeck">15 cards left</p>
+      </div>
+    </div>
+    <div class="playersStat">
+        <div class="stats">
+          <div class="statName statNameSelected">Player1</div>
+          <div class="statPoints">100</div>
+          <div class="timer">15:30</div>
+        </div>
+    </div>
+    <div class="field">
+      
+
+      <table id="board" border="0" class="">
+        <tr>
+          <td class="card visible" id="0">
+            <input type="hidden" name="card[0]" value="0">
+            <img class="card0 figure" src="" width="100px">
+          </td>
+          <td class="card visible" id="1">
+            <input type="hidden" name="card[1]" value="0">
+            <img class="card1 figure" src="" width="100px">
+          </td>
+          <td class="card visible" id="2">
+            <input type="hidden" name="card[2]" value="0">
+            <img class="card2 figure" src="" width="100px">
+          </td>
+          <td class="card visible" id="3">
+            <input type="hidden" name="card[3]" value="0">
+            <img class="card3 figure" src="" width="100px">
+          </td>
+          <td class="card showPlus3" id="4">
+            <input type="hidden" name="card[4]" value="0">
+            <img class="card4" src="" width="100px">
+          </td>
+        </tr>
+        <tr>
+          <td class="card visible" id="5">
+            <input type="hidden" name="card[5]" value="0">
+            <img class="card5 figure" src="" width="100px">
+          </td>
+          <td class="card visible" id="6">
+            <input type="hidden" name="card[6]" value="0">
+            <img class="card6 figure" src="" width="100px">
+          </td>
+          <td class="card visible" id="7">
+            <input type="hidden" name="card[7]" value="0">
+            <img class="card7 figure" src="" width="100px">
+          </td>
+          <td class="card visible" id="8">
+            <input type="hidden" name="card[8]" value="0">
+            <img class="card8 figure" src="" width="100px">
+          </td>
+          <td class="card showPlus3" id="9">
+            <input type="hidden" name="card[9]" value="0">
+            <img class="card9" src="" width="100px">
+          </td>
+        </tr>
+        <tr>
+          <td class="card visible" id="10">
+            <input type="hidden" name="card[10]" value="0">
+            <img class="card10 figure" src="" width="100px">
+          </td>
+          <td class="card visible" id="11">
+            <input type="hidden" name="card[11]" value="0">
+            <img class="card11 figure" src="" width="100px">
+          </td>
+          <td class="card visible" id="12">
+            <input type="hidden" name="card[12]" value="0">
+            <img class="card12 figure" src="" width="100px">
+          </td>
+          <td class="card visible" id="13">
+            <input type="hidden" name="card[13]" value="0">
+            <img class="card13 figure" src="" width="100px">
+          </td>
+          <td class="card showPlus3" id="14">
+            <input type="hidden" name="card[14]" value="0">
+            <img class="card14" src="" width="100px">
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
