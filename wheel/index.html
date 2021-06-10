@@ -84,16 +84,16 @@
             let theWheel = new Winwheel({
                 'numSegments'  : 7,     // Specify number of segments.
                 'outerRadius'  : 212,   // Set outer radius so wheel fits inside the background.
-                'textFontSize' : 25,    // Set font size as desired.
+                'textFontSize' : 20,    // Set font size as desired.
                 'segments'     :        // Define segments including colour and text.
                 [
-                   {'fillStyle' : '#37ff9e', 'text' : 'Приз 1'},
-                   {'fillStyle' : '#29a5f8', 'text' : 'Приз 2'},
-                   {'fillStyle' : '#f8e115', 'text' : 'Приз 3'},
-                   {'fillStyle' : '#3cf517', 'text' : 'Приз 4'},
-                   {'fillStyle' : '#ffc72c', 'text' : 'Приз 5'},
-                   {'fillStyle' : '#32d5eb', 'text' : 'Приз 6'},
-                   {'fillStyle' : '#f8e115', 'text' : '+1 вращение'}
+                   {'fillStyle' : '#0845a1', 'text' : 'ПРИЗ 1'},
+                   {'fillStyle' : '#0c50b6', 'text' : 'ПРИЗ 2'},
+                   {'fillStyle' : '#0f5bce', 'text' : 'ПРИЗ 3'},
+                   {'fillStyle' : '#1867dd', 'text' : 'ПРИЗ 4'},
+                   {'fillStyle' : '#2575ee', 'text' : 'ПРИЗ 5'},
+                   {'fillStyle' : '#3887fd', 'text' : 'ПРИЗ 6'},
+                   {'fillStyle' : '#5297ff', 'text' : '+1 ВРАЩЕНИЕ'}
                    /*{'fillStyle' : '#37ff9e', 'text' : 'Cкидка 10%\nна подготовку\nпроекта'},
                    {'fillStyle' : '#29a5f8', 'text' : 'Услуга\nавтообзвона'},
                    {'fillStyle' : '#f8e115', 'text' : 'Рассылка\nкоммерческих\nпредложений'},
@@ -204,25 +204,25 @@
                 let div = document.querySelector(".prizy");
                 let text;
                 switch(indicatedSegment.text){
-                    case '+1 вращение': 
+                    case '+1 ВРАЩЕНИЕ': 
                         text = 'Дополнительное вращение';
                         break;
-                    case 'Приз 1':
+                    case 'ПРИЗ 1':
                         text = 'Cкидка 10% на подготовку проекта';
                         break;
-                    case 'Приз 2':
+                    case 'ПРИЗ 2':
                         text = 'Услуга автообзвона';
                         break;
-                    case 'Приз 3':
+                    case 'ПРИЗ 3':
                         text = 'Рассылка коммерческих предложений';
                         break;
-                    case 'Приз 4':
+                    case 'ПРИЗ 4':
                         text = 'Личный кабинет для просмотра статистики (входящие звонки)';
                         break;
-                    case 'Приз 5':
+                    case 'ПРИЗ 5':
                         text = 'Личный кабинет для прослушивания звонков на 1 месяц (телемаркетинг)';
                         break;
-                    case 'Приз 6':
+                    case 'ПРИЗ 6':
                         text = '3% на весь проект';
                         break;
                 }
