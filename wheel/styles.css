@@ -1,0 +1,174 @@
+body
+{
+    font-family: arial;
+    margin: 0;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.spin_button {
+    position: relative;
+    top: 30px;
+    margin-right: 20px;
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0 10px;
+    line-height: 60px;
+    border: none;
+    font-weight: 600;
+    width: 150px;
+    background: #f15122;
+    border-radius: 10px;
+    font-size: 20px;
+    box-shadow: 2px 2px 2px #ffa589e1;
+}
+.spin_button:hover {
+    transform: scale(105%);
+    box-shadow: 5px 5px 5px #ffa589e1;
+    cursor: pointer;
+}
+.oferta-wheel {
+    color: #454646;
+    outline: none;
+}
+.wheel-a {
+    color: rgb(160, 160, 160);
+    outline: none;
+}
+.text-form {
+    position: relative;
+    top: 40px;
+    width: 60%;
+
+}
+.text-form input {
+    width: 350px;
+    border: 1px solid #e9e9e9;
+    height: 42px;
+    background: #f8f8f8;
+    border-radius: 4px;
+    padding: 0 18px;
+    color: #000;
+    font-family: 'PT Sans',sans-serif;
+    font-size: .9375rem;
+}
+.text-wheel {
+    display: block;
+    width: 85%;
+    background-color: #0078c0;
+    border-radius: 4px;
+    background: #007ac7;
+    padding: 38px 28px;
+    box-sizing: border-box;
+    margin-right: 40px;
+}
+.wheel_h2 {
+    color: white;
+    margin: 0;
+
+}
+.wheel_h3 {
+    color: white;
+}
+.prizy {
+    color: white;
+    font-size: 18px;
+    border-top: 1px solid #f6fcff6c;
+    
+    transition: 1s linear;
+}
+.prizy-won {
+    border-top: 1px solid #ff9777;
+}
+.prizy ol {
+    margin-bottom: 0;
+}
+.prizy .won-priz {
+    color: #ffffff;
+    text-shadow: 0 0 7px #ffffff;/*, 0 0 10px #ffffff, 0 0 20px #ffffff;/*, 0 0 40px #ff0000, 0 0 80px #ff0000, 0 0 90px #ff0000, 0 0 100px #ff0000, 0 0 150px #ff0000;*/
+    font-size: 25px;
+    font-weight: 700;
+}
+.wheel {
+    position: relative;
+    top: 50px;
+}
+/* Sets the background image for the wheel */
+td.the_wheel
+{
+    background-image: url("wheel_back.png");
+    background-position: center;
+    background-repeat: none;
+}
+
+/* Do some css reset on selected elements */
+h1, p
+{
+    margin: 0;
+}
+
+div.power_controls
+{
+    margin-right:70px;
+}
+/*div.power_controls2
+{
+    margin-left:70px;
+}*/
+
+div.html5_logo
+{
+    margin-left:70px;
+}
+
+/* Styles for the power selection controls */
+table.power
+{
+    background-color: #cccccc;
+    cursor: pointer;
+    border:1px solid #333333;
+}
+
+table.power th
+{
+    background-color: white;
+    cursor: default;
+}
+
+td.pw1
+{
+    background-color: #6fe8f0;
+}
+
+td.pw2
+{
+    background-color: #86ef6f;
+}
+
+td.pw3
+{
+    background-color: #ef6f6f;
+    /*color: #37ff9e;
+    color: #29a5f8  ;
+    color: #f8e115  ;
+    color: #3cf517  ;
+    color: #ffc72c  ;
+    color: #32d5eb  ;
+    color: #f8e115;*/
+}
+
+/* Style applied to the spin button once a power has been selected */
+.clickable
+{
+    cursor: pointer;
+}
+
+/* Other misc styles */
+.margin_bottom
+{
+    margin-bottom: 5px;
+}

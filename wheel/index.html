@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>HTML5 Canvas Winning Wheel</title>
+        <link rel="stylesheet" href="styles.css" type="text/css" />
+        <script type="text/javascript" src="Winwheel.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="text-form">
+                <div class="text-wheel">
+                    <h2 class="wheel_h2">Испытайте свою удачу!</h2>
+                    <h3 class="wheel_h3">Введите свой номер телефона, чтобы выиграть приз!</h3>
+
+                    <input type="tel" name="wheel_tel" pattern="+[0-9]{1}([0-9]{3})[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="+_(___)___-__-__">
+                    <br>
+                    <br>
+                    <input type="text" name="wheel_name" placeholder="Ваше имя">
+                    <br><br>
+
+                    <div class="prizy">
+                        <br />
+                        Можно выиграть:
+                        <ol>
+                            <li>Cкидка 10% на подготовку проекта</li>
+                            <li>Услуга автообзвона </li>
+                            <li>Рассылка коммерческих предложений</li>
+                            <li>Личный кабинет для просмотра<br>статистики (входящие звонки)</li>
+                            <li>Личный кабинет для прослушивания<br>звонков на 1 месяц (телемаркетинг)</li>
+                            <li>3% на весь проект</li>
+                            <!--<li>+1 вращение</li>-->
+                        </ol>
+                    </div>
+                </div>
+                
+                <button id="spin_button" class="spin_button" onclick="startSpin();">Пуск</button>
+                <button id="spin_button" class="spin_button" onclick="startSpin();">Пуск</button>
+                <br><br><br><br>
+                <p class="oferta-wheel">Нажимая кнопку на Пуск, вы соглашаетесь с условиями <a class="wheel-a" href="https://www.dtco.ru/privacy-policy/">оферты</a>.</p>
+                <!--<img id="spin_button" src="spin_on.png" alt="Spin" onClick="startSpin();" />
+                <img id="spin_button" src="spin_on.png" alt="Spin" onClick="startSpin();" />-->
+
+            </div>
+            <div class="wheel">
+                <table cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                        <!--<td>
+                            <div class="power_controls">
+                                <br />
+                                <br />
+                                <table class="power" cellpadding="10" cellspacing="0">
+                                    <tr>
+                                        <th align="center">Скорость вращения</th>
+                                    </tr>
+                                    <tr>
+                                        <td width="78" align="center" id="pw3" onClick="powerSelected(3);">Высокая</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" id="pw2" onClick="powerSelected(2);">Средняя</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" id="pw1" onClick="powerSelected(1);">Низкая</td>
+                                    </tr>
+                                </table>
+                                <br />
+                                <img id="spin_button" src="spin_off.png" alt="Spin" onClick="startSpin();" />
+                                <br /><br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;<a href="#" onClick="resetWheel(); return false;">Еще раз</a>
+                            </div>
+                        </td>-->
+                        <td width="438" height="582" class="the_wheel" align="center" valign="center">
+                            <canvas id="canvas" width="434" height="434">
+                                <p style="color: white" align="center">Sorry, your browser doesn't support canvas. Please try another.</p>
+                            </canvas>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            
+        </div>
+        <script>
+            // Create new wheel object specifying the parameters at creation time.
+            let theWheel = new Winwheel({
+                'numSegments'  : 7,     // Specify number of segments.
+                'outerRadius'  : 212,   // Set outer radius so wheel fits inside the background.
+                'textFontSize' : 25,    // Set font size as desired.
+                'segments'     :        // Define segments including colour and text.
+                [
+                   {'fillStyle' : '#37ff9e', 'text' : 'Приз 1'},
+                   {'fillStyle' : '#29a5f8', 'text' : 'Приз 2'},
+                   {'fillStyle' : '#f8e115', 'text' : 'Приз 3'},
+                   {'fillStyle' : '#3cf517', 'text' : 'Приз 4'},
+                   {'fillStyle' : '#ffc72c', 'text' : 'Приз 5'},
+                   {'fillStyle' : '#32d5eb', 'text' : 'Приз 6'},
+                   {'fillStyle' : '#f8e115', 'text' : '+1 вращение'}
+                   /*{'fillStyle' : '#37ff9e', 'text' : 'Cкидка 10%\nна подготовку\nпроекта'},
+                   {'fillStyle' : '#29a5f8', 'text' : 'Услуга\nавтообзвона'},
+                   {'fillStyle' : '#f8e115', 'text' : 'Рассылка\nкоммерческих\nпредложений'},
+                   {'fillStyle' : '#3cf517', 'text' : 'Просмотр\nстатистики'},
+                   {'fillStyle' : '#ffc72c', 'text' : 'Прослушивание\nзвонков на\n1 месяц'},
+                   {'fillStyle' : '#32d5eb', 'text' : '3%\nна весь проект'},
+                   {'fillStyle' : '#f8e115', 'text' : '+1 вращение '}*/
+                ],
+                'animation' :           // Specify the animation to use.
+                {
+                    'type'     : 'spinToStop',
+                    'duration' : 5,     // Duration in seconds.
+                    'spins'    : 7,     // Number of complete spins.
+                    'callbackFinished' : alertPrize
+                }
+            });
+
+            // Vars used by the code in this page to do power controls.
+            let wheelPower    = 0;
+            let wheelSpinning = false;
+
+            // -------------------------------------------------------
+            // Function to handle the onClick on the power buttons.
+            // -------------------------------------------------------
+            function powerSelected(powerLevel)
+            {
+                // Ensure that power can't be changed while wheel is spinning.
+                if (wheelSpinning == false) {
+                    // Reset all to grey incase this is not the first time the user has selected the power.
+                    document.getElementById('pw1').className = "";
+                    document.getElementById('pw2').className = "";
+                    document.getElementById('pw3').className = "";
+
+                    // Now light up all cells below-and-including the one selected by changing the class.
+                    if (powerLevel >= 1) {
+                        document.getElementById('pw1').className = "pw1";
+                    }
+
+                    if (powerLevel >= 2) {
+                        document.getElementById('pw2').className = "pw2";
+                    }
+
+                    if (powerLevel >= 3) {
+                        document.getElementById('pw3').className = "pw3";
+                    }
+
+                    // Set wheelPower var used when spin button is clicked.
+                    wheelPower = powerLevel;
+
+                    // Light up the spin button by changing it's source image and adding a clickable class to it.
+                    //document.getElementById('spin_button').src = "spin_on.png";
+                    //document.getElementById('spin_button').className = "clickable";
+                }
+            }
+
+            // -------------------------------------------------------
+            // Click handler for spin button.
+            // -------------------------------------------------------
+            function startSpin()
+            {
+                // Ensure that spinning can't be clicked again while already running.
+                if (wheelSpinning == false) {
+                    // Based on the power level selected adjust the number of spins for the wheel, the more times is has
+                    // to rotate with the duration of the animation the quicker the wheel spins.
+                    if (wheelPower == 1) {
+                        theWheel.animation.spins = 3;
+                    } else if (wheelPower == 2) {
+                        theWheel.animation.spins = 8;
+                    } else if (wheelPower == 3) {
+                        theWheel.animation.spins = 15;
+                    }
+
+                    // Disable the spin button so can't click again while wheel is spinning.
+                    //document.getElementById('spin_button').src       = "spin_off.png";
+                    //document.getElementById('spin_button').className = "";
+
+                    // Begin the spin animation by calling startAnimation on the wheel object.
+                    theWheel.startAnimation();
+
+                    // Set to true so that power can't be changed and spin button re-enabled during
+                    // the current animation. The user will have to reset before spinning again.
+                    wheelSpinning = true;
+                }
+            }
+
+            // -------------------------------------------------------
+            // Function for reset button.
+            // -------------------------------------------------------
+            function resetWheel()
+            {
+                theWheel.stopAnimation(false);  // Stop the animation, false as param so does not call callback function.
+                theWheel.rotationAngle = 0;     // Re-set the wheel angle to 0 degrees.
+                theWheel.draw();                // Call draw to render changes to the wheel.
+
+                document.getElementById('pw1').className = "";  // Remove all colours from the power level indicators.
+                document.getElementById('pw2').className = "";
+                document.getElementById('pw3').className = "";
+
+                wheelSpinning = false;          // Reset to false to power buttons and spin can be clicked again.
+            }
+
+            // -------------------------------------------------------
+            // Called when the spin animation has finished by the callback feature of the wheel because I specified callback in the parameters
+            // note the indicated segment is passed in as a parmeter as 99% of the time you will want to know this to inform the user of their prize.
+            // -------------------------------------------------------
+            function alertPrize(indicatedSegment)
+            {
+                let div = document.querySelector(".prizy");
+                let text;
+                switch(indicatedSegment.text){
+                    case '+1 вращение': 
+                        text = 'Дополнительное вращение';
+                        break;
+                    case 'Приз 1':
+                        text = 'Cкидка 10% на подготовку проекта';
+                        break;
+                    case 'Приз 2':
+                        text = 'Услуга автообзвона';
+                        break;
+                    case 'Приз 3':
+                        text = 'Рассылка коммерческих предложений';
+                        break;
+                    case 'Приз 4':
+                        text = 'Личный кабинет для просмотра статистики (входящие звонки)';
+                        break;
+                    case 'Приз 5':
+                        text = 'Личный кабинет для прослушивания звонков на 1 месяц (телемаркетинг)';
+                        break;
+                    case 'Приз 6':
+                        text = '3% на весь проект';
+                        break;
+                }
+                div.style.borderTop = "1px solid #ff9777";
+
+                div.innerHTML = `<h3>Ваш выигрыш:</h3><center><p class="won-priz">${text}</p></center>`;
+
+                // Do basic alert of the segment text. You would probably want to do something more interesting with this information.
+                //alert("You have won " + indicatedSegment.text);
+            }
+        </script>
+    </body>
+</html>
