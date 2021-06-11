@@ -3,80 +3,79 @@
     <head>
         <title>HTML5 Canvas Winning Wheel</title>
         <link rel="stylesheet" href="styles.css" type="text/css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500;600;700&display=swap" rel="stylesheet"> 
         <script type="text/javascript" src="Winwheel.js"></script>
         <script src="TweenMax.min.js"></script>
     </head>
     <body>
         <div class="container">
+            <!--<center>
+                <div class="win-widow">
+                    Ваш выигрыш:
+                </div>
+            </center>-->
+
             <div class="text-form">
                 <div class="text-wheel">
-                    <h2 class="wheel_h2">Испытайте свою удачу!</h2>
-                    <h3 class="wheel_h3">Введите свой номер телефона, чтобы выиграть приз!</h3>
+                    <center>
+                        <h2 class="wheel_h2">Испытайте свою удачу!</h2>
+                        <h3 class="wheel_h3">Введите свой номер телефона, чтобы выиграть приз!</h3>
 
-                    <input type="tel" name="wheel_tel" pattern="+[0-9]{1}([0-9]{3})[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="+_(___)___-__-__">
-                    <br>
-                    <br>
-                    <input type="text" name="wheel_name" placeholder="Ваше имя">
-                    <br><br>
-
-                    <div class="prizy">
-                        <br />
-                        Можно выиграть:
-                        <ol>
-                            <li>Cкидка 10% на подготовку проекта</li>
-                            <li>Услуга автообзвона </li>
-                            <li>Рассылка коммерческих предложений</li>
-                            <li>Личный кабинет для просмотра<br>статистики (входящие звонки)</li>
-                            <li>Личный кабинет для прослушивания<br>звонков на 1 месяц (телемаркетинг)</li>
-                            <li>3% на весь проект</li>
-                            <!--<li>+1 вращение</li>-->
-                        </ol>
-                    </div>
+                        <input type="tel" name="wheel_tel" pattern="+[0-9]{1}([0-9]{3})[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="+_(___)___-__-__">
+                        <br>
+                        <br>
+                        <input type="text" name="wheel_name" placeholder="Ваше имя">
+                        <br>
+                        <button id="spin_button" class="spin_button" onclick="startSpin();">Пуск</button>
+                        <button id="spin_button" class="spin_button" onclick="startSpin();">Пуск</button>
+                        <br><br><br>
+                        <p class="oferta-wheel">Нажимая кнопку на Пуск, вы соглашаетесь с условиями <a class="wheel-a" href="https://www.dtco.ru/privacy-policy/">оферты</a>.</p>
+                    </center>
+                    
                 </div>
+                <!--<div class="prizy">
+                    <br />
+                    Можно выиграть:
+                    <ol>
+                        <li>Cкидка 10% на подготовку проекта</li>
+                        <li>Услуга автообзвона </li>
+                        <li>Рассылка коммерческих предложений</li>
+                        <li>Личный кабинет для просмотра<br>статистики (входящие звонки)</li>
+                        <li>Личный кабинет для прослушивания<br>звонков на 1 месяц (телемаркетинг)</li>
+                        <li>3% на весь проект</li>
+                        <li>+1 вращение</li>
+                    </ol>
+                </div>-->
                 
-                <button id="spin_button" class="spin_button" onclick="startSpin();">Пуск</button>
-                <button id="spin_button" class="spin_button" onclick="startSpin();">Пуск</button>
-                <br><br><br><br>
-                <p class="oferta-wheel">Нажимая кнопку на Пуск, вы соглашаетесь с условиями <a class="wheel-a" href="https://www.dtco.ru/privacy-policy/">оферты</a>.</p>
+                
+                
                 <!--<img id="spin_button" src="spin_on.png" alt="Spin" onClick="startSpin();" />
                 <img id="spin_button" src="spin_on.png" alt="Spin" onClick="startSpin();" />-->
 
             </div>
-            <div class="wheel">
-                <table cellpadding="0" cellspacing="0" border="0">
-                    <tr>
-                        <!--<td>
-                            <div class="power_controls">
-                                <br />
-                                <br />
-                                <table class="power" cellpadding="10" cellspacing="0">
-                                    <tr>
-                                        <th align="center">Скорость вращения</th>
-                                    </tr>
-                                    <tr>
-                                        <td width="78" align="center" id="pw3" onClick="powerSelected(3);">Высокая</td>
-                                    </tr>
-                                    <tr>
-                                        <td align="center" id="pw2" onClick="powerSelected(2);">Средняя</td>
-                                    </tr>
-                                    <tr>
-                                        <td align="center" id="pw1" onClick="powerSelected(1);">Низкая</td>
-                                    </tr>
-                                </table>
-                                <br />
-                                <img id="spin_button" src="spin_off.png" alt="Spin" onClick="startSpin();" />
-                                <br /><br />
-                                &nbsp;&nbsp;&nbsp;&nbsp;<a href="#" onClick="resetWheel(); return false;">Еще раз</a>
-                            </div>
-                        </td>-->
-                        <td width="438" height="582" class="the_wheel" align="center" valign="center">
-                            <canvas id="canvas" width="434" height="434">
-                                <p style="color: white" align="center">Sorry, your browser doesn't support canvas. Please try another.</p>
-                            </canvas>
-                        </td>
-                    </tr>
-                </table>
+            <div class="wheel-contaner">
+                <div class="wheel">
+                    
+                    <!--<table cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                                <td width="495" height="490" class="the_wheel" align="center" valign="center">-->
+                                    
+                                <!--</td>
+                        </tr>
+                    </table>-->
+                </div>
+                <div class="wheel-inner">
+                    <canvas id="canvas" width="434" height="434">
+                        <p style="color: white" align="center">Sorry, your browser doesn't support canvas. Please try another.</p>
+                    </canvas>
+                </div>
+                <div id="spin"> </div>
+
             </div>
+            
             
         </div>
         <script>
@@ -84,23 +83,24 @@
             let theWheel = new Winwheel({
                 'numSegments'  : 7,     // Specify number of segments.
                 'outerRadius'  : 212,   // Set outer radius so wheel fits inside the background.
-                'textFontSize' : 20,    // Set font size as desired.
+                'textFontSize' : 16,    // Set font size as desired.
                 'segments'     :        // Define segments including colour and text.
                 [
-                   {'fillStyle' : '#0845a1', 'text' : 'ПРИЗ 1'},
-                   {'fillStyle' : '#0c50b6', 'text' : 'ПРИЗ 2'},
-                   {'fillStyle' : '#0f5bce', 'text' : 'ПРИЗ 3'},
-                   {'fillStyle' : '#1867dd', 'text' : 'ПРИЗ 4'},
-                   {'fillStyle' : '#2575ee', 'text' : 'ПРИЗ 5'},
-                   {'fillStyle' : '#3887fd', 'text' : 'ПРИЗ 6'},
-                   {'fillStyle' : '#5297ff', 'text' : '+1 ВРАЩЕНИЕ'}
-                   /*{'fillStyle' : '#37ff9e', 'text' : 'Cкидка 10%\nна подготовку\nпроекта'},
-                   {'fillStyle' : '#29a5f8', 'text' : 'Услуга\nавтообзвона'},
-                   {'fillStyle' : '#f8e115', 'text' : 'Рассылка\nкоммерческих\nпредложений'},
-                   {'fillStyle' : '#3cf517', 'text' : 'Просмотр\nстатистики'},
-                   {'fillStyle' : '#ffc72c', 'text' : 'Прослушивание\nзвонков на\n1 месяц'},
-                   {'fillStyle' : '#32d5eb', 'text' : '3%\nна весь проект'},
-                   {'fillStyle' : '#f8e115', 'text' : '+1 вращение '}*/
+                /*{'fillStyle':   '#ff951b', 'text' : 'ПРИЗ 1'},
+                   {'fillStyle' : '#ff822f', 'text' : 'ПРИЗ 2'},
+                   {'fillStyle' : '#ff714d', 'text' : 'ПРИЗ 3'},
+                   {'fillStyle' : '#ff6b66', 'text' : 'ПРИЗ 4'},
+                   {'fillStyle' : '#ff7795', 'text' : 'ПРИЗ 5'},
+                   {'fillStyle' : '#ff89b6', 'text' : 'ПРИЗ 6'},
+                   {'fillStyle' : '#ff98d4', 'text' : '+1          \nВРАЩЕНИЕ'}*/
+
+                   {'fillStyle' : '#ff951b', 'text' : 'Cкидка 10%  '},
+                   {'fillStyle' : '#ff822f', 'text' : 'Услуга  \nавтообзвона  '},
+                   {'fillStyle' : '#ff714d', 'text' : 'Рассылка  \nпредложений  '},
+                   {'fillStyle' : '#ff6b66', 'text' : 'Просмотр  \nстатистики  '},
+                   {'fillStyle' : '#ff7795', 'text' : 'Прослушивание  \nзвонков  '},
+                   {'fillStyle' : '#ff89b6', 'text' : '3% на  \nвесь проект  '},
+                   {'fillStyle' : '#ff98d4', 'text' : '+1         \nвращение  '}
                 ],
                 'animation' :           // Specify the animation to use.
                 {
@@ -201,38 +201,52 @@
             // -------------------------------------------------------
             function alertPrize(indicatedSegment)
             {
-                let div = document.querySelector(".prizy");
-                let text;
+                let div = document.querySelector(".text-wheel");
+                let text = "f";
                 switch(indicatedSegment.text){
-                    case '+1 ВРАЩЕНИЕ': 
+                    case '+1         \nвращение  ': 
                         text = 'Дополнительное вращение';
                         break;
-                    case 'ПРИЗ 1':
+                    case 'Cкидка 10%  ':
                         text = 'Cкидка 10% на подготовку проекта';
                         break;
-                    case 'ПРИЗ 2':
+                    case 'Услуга  \nавтообзвона  ':
                         text = 'Услуга автообзвона';
                         break;
-                    case 'ПРИЗ 3':
+                    case 'Рассылка  \nпредложений  ':
                         text = 'Рассылка коммерческих предложений';
                         break;
-                    case 'ПРИЗ 4':
+                    case 'Просмотр  \nстатистики  ':
                         text = 'Личный кабинет для просмотра статистики (входящие звонки)';
                         break;
-                    case 'ПРИЗ 5':
+                    case 'Прослушивание  \nзвонков  ':
                         text = 'Личный кабинет для прослушивания звонков на 1 месяц (телемаркетинг)';
                         break;
-                    case 'ПРИЗ 6':
+                    case '3% на  \nвесь проект  ':
                         text = '3% на весь проект';
                         break;
                 }
-                div.style.borderTop = "1px solid #ff9777";
 
-                div.innerHTML = `<h3>Ваш выигрыш:</h3><center><p class="won-priz">${text}</p></center>`;
+                div.innerHTML = `<div class="win-window">
+                                    <center>
+                                        <h3 style="font-size: 25px;">Поздравляем! Ваш выигрыш:</h3>
+                                        <h2 class="prize-won-title">
+                                            <p>
+                                                <span style="font-weight: 700">
+                                                    ${indicatedSegment.text}
+                                                </span><br>
+                                                <span style="font-size: 20px;">
+                                                    ${text}
+                                                </span>
+                                            </p>
+                                        </h2>
+                                    </center>
+                                </div>`;
 
                 // Do basic alert of the segment text. You would probably want to do something more interesting with this information.
                 //alert("You have won " + indicatedSegment.text);
             }
+
         </script>
     </body>
 </html>
