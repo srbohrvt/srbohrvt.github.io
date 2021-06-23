@@ -8,6 +8,7 @@ body
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .prize-won-title {
     font-size: 2.5rem;
 }
@@ -15,22 +16,25 @@ body
     margin-top: 20%;
 }
 .container{
-    max-width: 1200px;
+    width: 1100px;
+    height: 550px;
     margin: 0 auto;
     margin-top: 10vh;
     display: flex;
     justify-content: space-between;
     border-radius: 40px;
     background-color: white;
-    height: 80vh;
-
+    overflow: hidden;
     box-shadow: 0 0 1000px 1000px rgba(0, 0, 0, 0.315);
     transform: scale(90%);
 }
-.spin_button {
+.text-form-buttons {
     position: relative;
-    top: 30px;
-    margin-right: 20px;
+    top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.spin_button {
     display: inline-block;
     color: #fff;
     text-transform: uppercase;
@@ -38,9 +42,9 @@ body
     line-height: 60px;
     border: none;
     font-weight: 600;
-    width: 150px;
-    background: #ff6638;
-    border-radius: 10px;
+    width: 48%;
+    background: #5c85e6;
+    border-radius: 4px;
     font-size: 20px;
 }
 .spin_button:hover {
@@ -64,23 +68,22 @@ body
     border-top-left-radius: 40px;
     border-bottom-left-radius: 40px;
 
-    width: 43%;
-    background: linear-gradient(#007ac7 60%, #002942);
+    width: 40%;
+    background: linear-gradient(#1072ce, #1072ce, #002942);
 
 }
 .wheel-contaner {
 
-    background-image: url("BACK1.png");
+    background-image: url("BACK2.png");
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
     border-top-right-radius: 40px;
     border-bottom-right-radius: 40px;
-    overflow: hidden;
-    width: 51%;
+    width: 60%;
     position: relative;
 }
-.text-form input {
+.text-form .input_1 {
     width: 350px;
     border: 1px solid #e9e9e9;
     height: 42px;
@@ -90,17 +93,73 @@ body
     color: #000;
     font-family: 'PT Sans',sans-serif;
     font-size: .9375rem;
+
+    margin-top: 15px;
 }
+.text-form .oferta_wrapper {
+    margin-top: 20px;
+    font-size: 12px;
+
+    display: flex;
+    justify-content: start;
+}
+.oferta_wrapper label {
+    padding-left: 10px;
+    padding-top: 6%;
+}
+
+
+input[type="checkbox"] {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    -webkit-appearance: none;
+    appearance: none;
+    background: #ececec;
+    outline: none;
+    border-radius: 10px;
+    transition: .5s;
+    box-shadow: inset -5px -5px 7px rgba(255,255,255,0.55), inset 5px 5px 7px rgba(70,70,70,0.12);
+}
+input:checked[type="checkbox"] {
+    background:  rgb(255, 156, 110);
+    box-shadow: inset -1px -1px 2px rgba(255,255,255,0.55), inset 5px 5px 7px rgba(70,70,70,0.12);
+
+}
+input[type="checkbox"]::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    transform: scale(1.2);
+    background: rgb(255, 255, 255);
+    box-shadow: -1px -1px 2px rgba(255,255,255,0.55), 1px 1px 2px rgba(70,70,70,0.12);
+
+}
+input:checked[type="checkbox"]:before {
+    left: 15px;
+    box-shadow: 5px 5px 7px rgba(70,70,70,0.12);
+
+}
+
+
 .text-wheel {
     display: block;
-    width: 100%;
     border-radius: 4px;
     padding: 28px 28px 20px 28px;
     box-sizing: border-box;
-
+    margin-top: 20px;
     color: rgb(243, 243, 243);
 }
 .wheel_h2 {
+    font-size: 28px;
     color: white;
     margin: 0;
     font-weight: bold;
@@ -108,6 +167,17 @@ body
 .wheel_h3 {
     color: white;
     font-weight: 400;
+
+    margin-bottom: 0;
+}
+.span1 {
+    font-weight: 700;
+    line-height: 0.9;
+}
+.span2 {
+    margin-top: 6%;
+    font-weight: 200;
+    font-size: 20px;
 }
 .prizy {
     /*padding: 10px;
@@ -132,11 +202,28 @@ body
     font-size: 25px;
     font-weight: 700;
 }
+.img_container {
+    -webkit-box-pack: center;
+    justify-content: center;
+
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    z-index: 20;
+}
+.wheel_person_img {
+    position: relative;
+    bottom: -60px;
+    left: -90px;
+}
 .wheel-inner {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    /*transform: translate(-50%, -50%);*/
+    transform: translate(17%, -50%) rotate(-90deg);
+    
 }
 .wheel {
     /*position: relative;
@@ -148,10 +235,46 @@ body
     left: 50%;
     width: 100%;
     height: 100%;
-    transform: translate(-50%, -50%);
+    /*transform: translate(-50%, -50%);*/
+    transform: translate(0%, -50%);
     background-image: url("wheel_back.png");
     background-position: center;
     background-repeat: no-repeat;
+}
+#spin {
+    font-size: 20px;
+    user-select: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+    width: 108px;
+    height: 108px;
+    background: url("center2.png");
+    color: #fff;
+    box-shadow: 0 0px 15px 5px rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    /*border: 2px solid #fff;*/
+    transition: 0.8s;
+
+    top: 50%;
+    left: 50%;
+    /*transform: translate(-50%, -50%);*/
+    transform: translate(220%, -50%) rotate(-90deg);;
+    /*margin: -15%;
+    top: 268px;
+    left: 263px;*/
+}
+
+#spin::after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    border: 18px solid transparent;
+    border-bottom-color: #f0d561;
+    border-top: none;
 }
 /* Sets the background image for the wheel */
 td.the_wheel
@@ -222,6 +345,14 @@ td.pw3
     color: #ff7795  ;
     color: #ff89b6  ;
     color: #ff98d4;*/
+
+    color: #374ece;
+    color: #5296f0  ;
+    color: #5266db  ;
+    color: #5296f0  ;
+    color: #373ace  ;
+    color: #5a7ae2  ;
+    color: #008af3;
 }
 
 /* Style applied to the spin button once a power has been selected */
@@ -238,37 +369,3 @@ td.pw3
 
 
 
-#spin {
-    font-size: 20px;
-    user-select: none;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-
-    width: 108px;
-    height: 108px;
-    background: url("center2.png");
-    color: #fff;
-    box-shadow: 0 0px 15px 5px rgba(0, 0, 0, 0.6);
-    border-radius: 50%;
-    /*border: 2px solid #fff;*/
-    transition: 0.8s;
-
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /*margin: -15%;
-    top: 268px;
-    left: 263px;*/
-}
-  
-#spin::after {
-    content: "";
-    position: absolute;
-    top: -15px;
-    border: 18px solid transparent;
-    border-bottom-color: #f0d561;
-    border-top: none;
-}   

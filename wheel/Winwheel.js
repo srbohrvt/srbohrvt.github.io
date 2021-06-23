@@ -14,7 +14,7 @@ function Winwheel(options, drawWheel)
         'textFontWeight'    : '600',       // Font weight.
         'textOrientation'   : 'horizontal', // Either horizontal, vertical, or curved.
         'textAlignment'     : 'outer',     // Either center, inner, or outer.
-        'textDirection'     : 'normal',     // Either normal or reversed. In normal mode for horizontal text in segment at 3 o'clock is correct way up, in reversed text at 9 o'clock segment is correct way up.
+        'textDirection'     : 'reversed',     // Either normal or reversed. In normal mode for horizontal text in segment at 3 o'clock is correct way up, in reversed text at 9 o'clock segment is correct way up.
         'textMargin'        : null,         // Margin between the inner or outer of the wheel (depends on textAlignment).
         'textFillStyle'     : 'white',      // This is basically the text colour.
         'textStrokeStyle'   : null,         // Basically the line colour for segment text, only looks good for large text so off by default.
