@@ -214,8 +214,9 @@ input:checked[type="checkbox"]:before {
 }
 .wheel_person_img {
     position: relative;
-    bottom: -60px;
-    left: -70px;
+    bottom: -140px;
+    left: -170px;
+    transform: scale(1.2);
 }
 .wheel-inner {
     position: absolute;
