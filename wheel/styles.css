@@ -844,3 +844,268 @@ body
     }
    
 }
+
+
+
+
+@media (max-width: 389px) {
+    .container{
+        position: relative;
+        margin-top: -10px;
+        margin-bottom: 10px;
+        margin-left: -15px;
+        margin-right: auto;
+
+        width: 390px;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+
+        border-radius: 40px;
+        background-color: white;
+        overflow: hidden;
+        box-shadow: 0 0 1000px 1000px rgba(0, 0, 0, 0.315);
+
+        transform: scale(.9, .9);
+    }
+    .form-container {
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+    .text-form {
+
+        padding: 40px;
+        border-top-left-radius: 40px;
+        border-bottom-left-radius: 40px;
+        height: 100%;
+        /*background: linear-gradient(#2897ff, #1072ce, #002942);*/
+        background-color: #3f6ee0;
+        background-image: linear-gradient(180deg, #3f6ee0 0%, #302f2f 100%);
+    
+    }
+    .text-form .input_1 {
+        width: 250px;
+        border: 1px solid #e9e9e9;
+        height: 42px;
+        background: #f8f8f8;
+        border-radius: 4px;
+        padding: 0 18px;
+        color: #000;
+        font-family: 'PT Sans',sans-serif;
+        font-size: .9375rem;
+
+        margin-top: 15px;
+    }
+    .wheel-inner {
+        position: absolute;
+        bottom: -150px;
+        width: 390px;
+        height: 390px;
+    }
+    canvas {
+        width: 309px;
+        height: 309px;
+        transform: translateX(41px);
+    }
+    .wheel {
+
+        position: absolute;
+        bottom: -110px;
+        width: 390px;
+        height: 390px;
+        background-image: url("wheel_back.png");
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    #spin {
+        font-size: 20px;
+        user-select: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+
+        width: 70px;
+        height: 70px;
+        background: url("center2.png");
+        background-size: 100%;
+
+        color: #fff;
+        box-shadow: 0 0px 15px 5px rgba(0, 0, 0, 0.6);
+        border-radius: 50%;
+        /*border: 2px solid #fff;*/
+        transition: 0.8s;
+
+        top: 590px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    #spin::after {
+        content: "";
+        position: absolute;
+        top: -8px;
+        border: 10px solid transparent;
+        border-bottom-color: #f0d561;
+        border-top: none;
+    }
+
+
+
+    .prize-won-title {
+        font-size: 2.5rem;
+    }
+    .win-window {
+        margin-top: 20%;
+    }
+    .img_container {
+        display: none;
+    }
+    .wheel-contaner {
+        background-image: none;
+    }
+    .text-form-buttons {
+        position: relative;
+        top: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .spin_button {
+        display: inline-block;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 0 10px;
+        line-height: 60px;
+        border: none;
+        font-weight: 600;
+        width: 48%;
+        background: #5c85e6;
+        border-radius: 4px;
+        font-size: 20px;
+    }
+    .spin_button:hover {
+        transform: scale(105%);
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.644);
+        cursor: pointer;
+    }
+    .oferta-wheel {
+        color: #afafaf;
+        outline: none;
+        font-size: .8rem;
+
+    }
+    .wheel-a {
+        color: rgb(255, 211, 175);
+        outline: none;
+    }
+
+   
+    .text-form .oferta_wrapper {
+        margin-top: 20px;
+        font-size: 12px;
+
+        display: flex;
+        justify-content: start;
+    }
+    .oferta_wrapper label {
+        padding-left: 17px;
+        padding-top: 6%;
+    }
+
+
+    input[type="checkbox"] {
+        margin-bottom: 20px;
+        margin-top: 20px;
+        cursor: pointer;
+        position: relative;
+        width: 50px;
+        height: 20px;
+        -webkit-appearance: none;
+        appearance: none;
+        background: #ececec;
+        outline: none;
+        border-radius: 10px;
+        transition: .5s;
+        box-shadow: inset -5px -5px 7px rgba(255,255,255,0.55), inset 5px 5px 7px rgba(70,70,70,0.12);
+    }
+    input:checked[type="checkbox"] {
+        background:  rgb(255, 156, 110);
+        box-shadow: inset -1px -1px 2px rgba(255,255,255,0.55), inset 5px 5px 7px rgba(70,70,70,0.12);
+
+    }
+    input[type="checkbox"]::before {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        top: 0;
+        left: 0;
+        transition: .5s;
+        transform: scale(1.2);
+        background: rgb(255, 255, 255);
+        box-shadow: -1px -1px 2px rgba(255,255,255,0.55), 1px 1px 2px rgba(70,70,70,0.12);
+
+    }
+    input:checked[type="checkbox"]:before {
+        left: 15px;
+        box-shadow: 5px 5px 7px rgba(70,70,70,0.12);
+
+    }
+
+
+    .text-wheel {
+        display: block;
+        border-radius: 4px;
+        padding: 10px;
+        box-sizing: border-box;
+        color: rgb(243, 243, 243);
+    }
+    .wheel_h2 {
+        font-size: 28px;
+        color: white;
+        margin: 0;
+        font-weight: bold;
+    }
+    .wheel_h3 {
+        color: white;
+        font-weight: 400;
+
+        margin-bottom: 0;
+    }
+    .span1 {
+        font-weight: 700;
+        line-height: 0.9;
+    }
+    .span2 {
+        margin-top: 6%;
+        font-weight: 200;
+        font-size: 20px;
+    }
+    .prizy {
+        /*padding: 10px;
+        border: 1px solid #007ac7;
+        color: #383838;
+        font-size: .9375rem;
+        
+        transition: 1s linear;*/
+        margin-top: 10px;
+        display: block;
+        width: 85%;
+        border: 1px solid #007ac7;
+        border-radius: 4px;
+        padding: 0 28px 20px 28px;
+        box-sizing: border-box;
+    }
+    .prizy ol {
+        margin-bottom: 0;
+    }
+    .prizy .won-priz {
+        color: #383838;
+        font-size: 25px;
+        font-weight: 700;
+    }
+   
+}
