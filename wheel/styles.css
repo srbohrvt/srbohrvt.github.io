@@ -28,6 +28,34 @@ body
     box-shadow: 0 0 1000px 1000px rgba(0, 0, 0, 0.315);
     transform: scale(90%);
 }
+.form-container {
+    display: block;
+    height: 100%;
+    width: 55%;
+}
+.text-form {
+
+    padding: 40px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    height: 100%;
+    /*width: 40%;*/
+    background: linear-gradient(#1072ce, #1072ce, #002942);
+
+}
+.wheel-contaner {
+
+    background-image: url("BACK2.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+
+    width: 660px;
+    /*width: 60%;*/
+    position: relative;
+}
 .text-form-buttons {
     position: relative;
     top: 20px;
@@ -62,27 +90,7 @@ body
     color: rgb(255, 211, 175);
     outline: none;
 }
-.text-form {
 
-    padding: 40px;
-    border-top-left-radius: 40px;
-    border-bottom-left-radius: 40px;
-
-    width: 40%;
-    background: linear-gradient(#1072ce, #1072ce, #002942);
-
-}
-.wheel-contaner {
-
-    background-image: url("BACK2.png");
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-top-right-radius: 40px;
-    border-bottom-right-radius: 40px;
-    width: 60%;
-    position: relative;
-}
 .text-form .input_1 {
     width: 350px;
     border: 1px solid #e9e9e9;
@@ -277,57 +285,9 @@ input:checked[type="checkbox"]:before {
     border-bottom-color: #f0d561;
     border-top: none;
 }
-/* Sets the background image for the wheel */
-td.the_wheel
-{
-    /*background-image: url("wheel_back.png");
-    background-position: center;
-    background-repeat: no-repeat;*/
-}
 
-/* Do some css reset on selected elements */
-h1, p
-{
-    margin: 0;
-}
 
-div.power_controls
-{
-    margin-right:70px;
-}
-/*div.power_controls2
-{
-    margin-left:70px;
-}*/
 
-div.html5_logo
-{
-    margin-left:70px;
-}
-
-/* Styles for the power selection controls */
-table.power
-{
-    background-color: #cccccc;
-    cursor: pointer;
-    border:1px solid #333333;
-}
-
-table.power th
-{
-    background-color: white;
-    cursor: default;
-}
-
-td.pw1
-{
-    background-color: #6fe8f0;
-}
-
-td.pw2
-{
-    background-color: #86ef6f;
-}
 
 td.pw3
 {
@@ -354,18 +314,6 @@ td.pw3
     color: #373ace  ;
     color: #5a7ae2  ;
     color: #008af3;
-}
-
-/* Style applied to the spin button once a power has been selected */
-.clickable
-{
-    cursor: pointer;
-}
-
-/* Other misc styles */
-.margin_bottom
-{
-    margin-bottom: 5px;
 }
 
 
