@@ -20,18 +20,21 @@
             </center>-->
             <div class="form-container">
                 <div class="text-form">
+                    <div style="display: none;" class="win-window"></div>
                     <div class="text-wheel">
                             <h2 class="wheel_h2">Испытайте свою удачу!</h2>
                             <h3 class="wheel_h3">Введите свой номер телефона, чтобы выиграть приз!</h3>
 
-                            <input class="input_1" type="tel" name="wheel_tel" pattern="+[0-9]{1}([0-9]{3})[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="+_(___)___-__-__">
-                            <br>
-                            <input class="input_1" type="text" name="wheel_name" placeholder="Ваше имя">
+                            <form>
+                                <input class="input_1" type="tel" name="wheel_tel" pattern="+[0-9]{1}([0-9]{3})[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="+_(___)___-__-__">
+                                <br>
+                                <input class="input_1" type="text" name="wheel_name" placeholder="Ваше имя">
+                                <input class="hidden_prize" type="hidden" name="wheel_prize" value="">
+                            </form>
                             <div class="text-form-buttons">
-                                    <button id="spin_button" class="spin_button" onclick="startSpin();">Пуск</button>
-                                    <button id="spin_button" class="spin_button" onclick="">Закрыть</button>  
+                                <button id="spin_button" class="spin_button" onclick="startSpin();">Пуск</button>
+                                <button id="spin_button" class="spin_button" onclick="">Закрыть</button>  
                             </div>
-                            
                             <div class="oferta_wrapper">
                                 <input class="oferta-checkbox" type="checkbox" id="oferta" name="oferta" checked>
                                 <label for="oferta">Нажимая кнопку на Пуск, вы соглашаетесь с условиями <a class="wheel-a" href="https://www.dtco.ru/privacy-policy/">оферты</a>.</label>
@@ -168,11 +171,13 @@
                 theWheel.rotationAngle = 0;     // Re-set the wheel angle to 0 degrees.
                 theWheel.draw();                // Call draw to render changes to the wheel.
 
-                document.getElementById('pw1').className = "";  // Remove all colours from the power level indicators.
-                document.getElementById('pw2').className = "";
-                document.getElementById('pw3').className = "";
-
                 wheelSpinning = false;          // Reset to false to power buttons and spin can be clicked again.
+
+                let div = document.querySelector(".text-wheel");
+                let win_box = document.querySelector('.win-window');
+
+                div.style.display = "block";
+                win_box.style.display = "none";
             }
 
             // -------------------------------------------------------
@@ -182,7 +187,7 @@
             function alertPrize(indicatedSegment)
             {
                 let div = document.querySelector(".text-wheel");
-                let text = "f";
+                let text = "error";
                 switch(indicatedSegment.text){
                     case '+1         \nвращение  ': 
                         text = 'Дополнительное вращение';
@@ -206,23 +211,52 @@
                         text = '3% на весь проект';
                         break;
                 }
+                let str = '<a href="#" onclick="resetWheel(); return false;">Крутить ещё раз</a>';
+                if (text === 'Дополнительное вращение') {
+                    div.style.display = "none";
 
-                div.innerHTML = `<div class="win-window">
-                                    <center>
-                                        <h3 style="font-weight: 200; font-size: 25px;">Поздравляем! Ваш выигрыш:</h3>
-                                        <h2 class="prize-won-title">
-                                            <div>
-                                                <div class="span1">
-                                                    ${indicatedSegment.text}
+                    let win_box = document.querySelector('.win-window');
+                    win_box.style.display = "block";
+                    win_box.innerHTML = `<center>
+                                            <h3 style="font-weight: 200; font-size: 25px;">Поздравляем! Ваш выигрыш:</h3>
+                                            <h2 class="prize-won-title">
+                                                <div>
+                                                    <div class="span1">
+                                                        ${indicatedSegment.text}
+                                                    </div>
+                                                    <div class="span2">
+                                                        ${text}
+                                                    </div>
+                                                    <div class="restart">
+                                                        ${str}
+                                                    </div>
                                                 </div>
-                                                <div class="span2">
-                                                    ${text}
-                                                </div>
-                                            </div>
-                                        </h2>
-                                    </center>
-                                </div>`;
+                                            </h2>
+                                        </center>`;
+                } else {
+                    let input_field = document.querySelector(".hidden_prize");
+                    input_field.value = text;  
 
+                    div.style.display = "none";
+
+                    let win_box = document.querySelector('.win-window');
+                    win_box.style.display = "block";
+                    win_box.innerHTML = `<center>
+                                            <h3 style="font-weight: 200; font-size: 25px;">Поздравляем! Ваш выигрыш:</h3>
+                                            <h2 class="prize-won-title">
+                                                <div>
+                                                    <div class="span1">
+                                                        ${indicatedSegment.text}
+                                                    </div>
+                                                    <div class="span2">
+                                                        ${text}
+                                                    </div>
+                                                </div>
+                                            </h2>
+                                        </center>`;
+                                  
+                }
+                
                 // Do basic alert of the segment text. You would probably want to do something more interesting with this information.
                 //alert("You have won " + indicatedSegment.text);
             }

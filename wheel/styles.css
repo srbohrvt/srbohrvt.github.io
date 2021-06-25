@@ -16,6 +16,9 @@ body
     }
     .win-window {
         margin-top: 20%;
+        border-radius: 4px;
+        color: rgb(243, 243, 243);
+
     }
     .container{
         width: 1100px;
@@ -431,6 +434,8 @@ body
     }
     .win-window {
         margin-top: 20%;
+        border-radius: 4px;
+        color: rgb(243, 243, 243);
     }
     .img_container {
         display: none;
@@ -694,6 +699,8 @@ body
     }
     .win-window {
         margin-top: 20%;
+        border-radius: 4px;
+        color: rgb(243, 243, 243);
     }
     .img_container {
         display: none;
@@ -959,6 +966,8 @@ body
     }
     .win-window {
         margin-top: 20%;
+        border-radius: 4px;
+        color: rgb(243, 243, 243);
     }
     .img_container {
         display: none;
