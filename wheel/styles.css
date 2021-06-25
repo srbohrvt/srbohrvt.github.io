@@ -39,7 +39,6 @@ body
     border-top-left-radius: 40px;
     border-bottom-left-radius: 40px;
     height: 100%;
-    /*width: 40%;*/
     background: linear-gradient(#1072ce, #1072ce, #002942);
 
 }
@@ -53,7 +52,6 @@ body
     border-bottom-right-radius: 40px;
 
     width: 660px;
-    /*width: 60%;*/
     position: relative;
 }
 .text-form-buttons {
