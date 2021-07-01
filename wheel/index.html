@@ -277,10 +277,21 @@
                                                     <div class="span2">
                                                         ${text}
                                                     </div>
+                                                    <div class="restart">
+                                                        <button style="margin-top: 20px;" id="spin_button2" class="spin_button" onclick="">Закрыть</button>
+                                                    </div>
                                                 </div>
                                             </h2>
                                         </center>`;
-                                  
+                    let close_btn = document.querySelector('#spin_button2');
+                    close_btn.addEventListener('click', handleClose);
+                    function handleClose() {
+                        console.log(2);
+
+                        main_wheel_container.style.display = 'none';
+                        wid_btn.style.display = 'block';
+
+                    }              
                 }
                 
                 // Do basic alert of the segment text. You would probably want to do something more interesting with this information.
