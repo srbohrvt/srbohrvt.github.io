@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>HTML5 Canvas Winning Wheel</title>
+        <title>Экраны</title>
         <link rel="stylesheet" href="css/reset.css" type="text/css" />
         <link rel="stylesheet" href="css/styles.css" type="text/css" />
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500;600;700&display=swap" rel="stylesheet"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
     </head>
     <body>
         <header>
             <div class="header_logo">
                 <img class="top" src="img/filin-rgb-1.png">
+            </div>
+            <div class="header_logo2">
+                <img class="top_scroll" src="img/filin-rgb-1.png">
             </div>
             <div class="header_nav">
                 <a href="">Доходный бизнес</a>
@@ -25,7 +30,20 @@
                     <a href="tel:+79051134567">+7 9051 134 567</a> 
                 </center>
             </div>
+            <aside class="burger-menu">
+                <a href="#" class="burger-menu__button">
+                    <span class="burger-menu__lines"></span>
+                </a>
+                <nav class="burger-menu__nav">
+                    <a class="burger-menu__link active" href="">Доходный бизнес</a>
+                    <a class="burger-menu__link" href="">Схема работы</a>
+                    <a class="burger-menu__link" href="">Терминалы</a>
+                    <a class="burger-menu__link" href="">Контакты</a>
+                </nav>
+                <div class="burger-menu__overlay"></div>
+            </aside>
         </header>
+        
         <section class="first">
             <div class="intro">
                 <p><span class="span1">Терминалы ОСАГО</span></p>
@@ -72,7 +90,7 @@
                 </div>
                 
                 <div class="multitach">
-                    <img class="multitach_laptop" src="img/plutos_multitach_42_3.png">
+                    <img class="multitach_laptop" src="img/plutos_multitach_42_3c.png">
                 </div>
             </div>
         </section>
@@ -106,7 +124,8 @@
                 </div>
             </center>
 
-                <div class="black_box_wrapper">
+               
+        </section>
                     <div class="black_box_circles">
                         <div class="circles_column">
                             <div class="circle_transparrent"></div>
@@ -170,9 +189,6 @@
                             <div class="circle_blue"></div>
                         </div>
                     </div>
-                </div>
-        </section>
-
         <section class="third">
             <center>
                 <div class="sec_header">
@@ -230,6 +246,25 @@
                             вывести на свой расчетный счет.</p>
                     </div>
                 </div>
+                <div class="forth_inner_mobile">
+                    <div class="up">
+                        <p class="span6">Вы покупаете терминал – мы<br>доставляем его бесплатно.<br>Лучшее место установки с<br>
+                            высокой проходимостью: СТО,<br>мойка, ТЦ. Но вы можете<br>установить его и в своем офисе.</p>
+                    </div>
+                    <div class="line">
+                        <!--
+                        <img class="visible" src="img/line0.png">
+                        <img class="visible" src="img/line01.png">-->
+                        <img class="visible" src="img/line1.png">
+                        <img class="next next1" src="img/line11.png">
+                        <img class="next next2" src="img/line22.png">
+                        <img class="next next3" src="img/line33.png">
+                    </div>
+                    <div class="down">
+                        <p class="span6">Терминал работает интуитивно<br>просто. Клиент в любое время<br>самостоятельно может<br>
+                            оформить полис ОСАГО и<br>оплатить его картой.</p>
+                    </div>
+                </div>
 
                 <div class="forth_pics_row">
                     <div class="rect"></div>
@@ -244,9 +279,15 @@
                     <p><span class="span3">Выбрать вариант</span></p><br>
                     <p><span class="span5">Какой терминал<br>купить?</span></p>
                 </div>
+                <div class="cards_slider_numbers">
+                    <div class="card_number active">1</div>
+                    <div class="card_number">2</div>
+                    <div class="card_number">3</div>
+                </div>
             </center>
+            
             <div class="cards">
-                <div class="card">
+                <div class="vis0 card">
                     <div class="card_circles">
                         <div class="circles_column">
                             <div class="circle"></div>
@@ -282,7 +323,7 @@
                     </div>
                     
                 </div>
-                <div class="card">
+                <div class="hid card">
                     <div class="card_circles">
                         <div class="circles_column">
                             <div class="circle"></div>
@@ -317,7 +358,7 @@
                         <img src="img/t2.png">
                     </div>
                 </div>
-                <div class="card">
+                <div class="hid card">
                     <div class="card_circles">
                         <div class="circles_column">
                             <div class="circle"></div>
@@ -350,10 +391,10 @@
                             </div>
                             
                         </div>
-                        <img src="img/t3.png">
+                        <img src="img/t3cc.png">
                     </div>
                 </div>
-                </div>
+            </div>
                 <div class="black_box_wrapper">
                     <div class="black_box">
                         
@@ -394,8 +435,12 @@
                     </div>
                 </div>
         </section>
+        <div class="wrap">
+            <div class="footer_cover"></div>
+        </div>
+
         <footer>
-            <img class="footer_logo" src="img/filin-rgb-1.jfif">
+            <img class="footer_logo" src="img/filin-rgb-2.png">
             <div class="header_nav">
                 <a href="#">Доходный бизнес</a>
                 <a href="#">Как это работает?</a>
@@ -410,7 +455,7 @@
             </div>
         </footer>
         <script src="https://kit.fontawesome.com/8192ddc015.js" crossorigin="anonymous"></script>
-
+        <script src="swiped-events.js"></script>
         <script src="script.js"></script>
     </body>
 </html>
