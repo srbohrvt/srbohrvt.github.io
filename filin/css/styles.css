@@ -1595,7 +1595,7 @@ footer {
 
     }
     .black_box_circles {
-        top: 1470px;;
+        top: 1475px;
         left: -30px;
     }
     .black_box_circles .circle_transparrent {
@@ -1614,7 +1614,7 @@ footer {
     section.third {
         z-index: 0;
         padding-top: 150px;
-        top: -11vh;
+        top: -14vh;
     }
     .span5 {
         width: 70vw;
@@ -1838,7 +1838,7 @@ footer {
 
     .footer_cover {
         height: 90vh;
-        bottom: -300px;
+        bottom: -350px;
     }
     footer {
         margin-bottom: 0;
