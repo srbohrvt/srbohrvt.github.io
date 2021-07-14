@@ -77,7 +77,7 @@ function HandleLeft_Line() {
     }
     line.style.transform = `translate(-${left_count*width*0.47}px, 0)`;
 
-    console.log('   ;   ' + left_count);
+    //console.log('   ;   ' + left_count);
 }
 function HandleRight_Line() {
     if (left_count == 0) {
@@ -108,6 +108,28 @@ function HandleRight_Line() {
 
     console.log(left_count);
 }
+
+
+
+let left = true;
+let eventL = new Event("swiped-left");
+let eventR = new Event("swiped-right");
+
+function tick() {
+    console.log(left_count);
+    if (left) {
+        if (left_count >= 4) {
+            left_count--;
+            left = false;
+        } else div.dispatchEvent(eventL);
+    }
+    if (!left) {
+        if (left_count == 0) {
+            left = true;
+        } else div.dispatchEvent(eventR);
+    }
+}
+let timerId = setInterval(() => tick(), 10000);
 
 
 let cards = document.querySelector('.cards');
