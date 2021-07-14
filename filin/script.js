@@ -129,7 +129,7 @@ function tick() {
         } else div.dispatchEvent(eventR);
     }
 }
-let timerId = setInterval(() => tick(), 10000);
+let timerId = setInterval(() => tick(), 4000);
 
 
 let cards = document.querySelector('.cards');
