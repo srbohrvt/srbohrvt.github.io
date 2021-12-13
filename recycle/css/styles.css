@@ -946,7 +946,7 @@ INFO
 
     border-left: 7px solid #FFAA17;
 
-    margin: 133px auto 95px auto;
+    margin: 60px auto 60px auto;
 }
 .info-text {
     font-family: Ubuntu;
@@ -1436,7 +1436,9 @@ footer .footer_menu_wrap {
 
 
 
-
+.cards_slider_numbers {
+    display: none;
+}
 
 @media(min-width: 1000px) and (max-width: 1400px) {
     section.first .intro {
@@ -1444,8 +1446,51 @@ footer .footer_menu_wrap {
         margin-top: 20px;
     }
 }
-@media (min-width: 801px) {
+@media (max-width: 900px) {
+    .cards_slider_numbers {
+        display: flex;
+        justify-content: center;
+
+        width: 106px;
+    }
+    .card_number {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        /* identical to box height */
+
+        letter-spacing: -0.5px;
+
+        display: block;
+        width: 24px;
+        height: 24px;
+
+        border-radius: 50%;
+        background: #C4C4C4;
+        text-align: center;
+
+        padding-top: 1px;
+        box-sizing: border-box;
+
+        margin-right: 17px;
+        margin-top: 37px;
+    }
+    .card_number:nth-of-type(3) {
+        margin-right: 0;
+    }
+    .active {
+        background: #EB8E2A;
+        color: #fff;
+    }
     
+    .card {
+        margin-right: 0;
+    }
+    .cards {
+        margin-top: 20px;
+    }
 }
 @media(max-width: 1350px) {
     /*.span1 {
@@ -1714,10 +1759,12 @@ footer .footer_menu_wrap {
    
 }
 @media(max-width: 900px) {
-    
+    section.third h2.header {
+        margin-top: 20px;
+    }
     .cards {
         overflow: hidden;
-        height: 600px;
+        height: 461px;
         justify-content: center;
 
     }
@@ -2016,10 +2063,6 @@ footer .footer_menu_wrap {
         width: 276px;
         margin-right: 0;
     }
-    .card {
-        margin-right: 0;
-    }
-
     /*SECTION.THIRD*/
     section.third {
         padding-left: 20px;
@@ -2402,6 +2445,10 @@ footer .footer_menu_wrap {
         padding-top: 0;
         color: #ebebeb;
         font-size: 20px;
+
+    }
+    .formContainer form button {
+        width: 270px;
 
     }
     .presForm h3 {
