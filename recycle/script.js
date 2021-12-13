@@ -128,6 +128,7 @@ let timerId = setInterval(() => tick(), 4000);
 
 let cards = document.querySelector('.cards');
 let card = document.querySelectorAll('.card');
+let numbers = document.querySelectorAll('.card_number');
 card[0].addEventListener('swiped-left', HandleLeft_Card0);
 card[1].addEventListener('swiped-left', HandleLeft_Card1);
 
