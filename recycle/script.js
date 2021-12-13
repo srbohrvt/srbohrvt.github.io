@@ -214,13 +214,13 @@ function HandleRight_Card2() {
     numbers[1].classList.add('active');
 }
 
-
 let cards2 = document.querySelector('.cards2');
 let card2 = document.querySelectorAll('.card2');
-
-cards2.addEventListener('swiped-left', HandleLeft_Card);
-cards2.addEventListener('swiped-right', HandleRight_Card);
-
+if (window.innerWidth < '600') {
+    console.log(123)
+    cards2.addEventListener('swiped-left', HandleLeft_Card);
+    cards2.addEventListener('swiped-right', HandleRight_Card);
+}
 function HandleLeft_Card() {
     let current = cards2.style.transform;
     //max -787px
@@ -290,7 +290,7 @@ function HandleRight_Card22() {
 let cvr = document.querySelector('.cover');
 let body = document.querySelector('body');
 //Оставить заяку
-let reqFormCaller = document.querySelector('.request');
+let reqFormCaller = document.querySelectorAll('.request');
 let reqContainer = document.querySelector('.reqForm');
 let reqFormInner = `<h3>Оставить заявку</h3><div class="close1">x</div>
                         <form method="POST" action="actions.php" id="get_req_form"> 
@@ -298,9 +298,10 @@ let reqFormInner = `<h3>Оставить заявку</h3><div class="close1">x<
                             <input type="number" name="reqNumber" placeholder="Телефон" required><br>
                                 <button type="submit">Отправить</button>
                         </form>
-                    <div class="succes_error_reporter"></div>
-                    <img src="img/wave.png">`
-reqFormCaller.addEventListener('click', reqFormDisplay);
+                    <div class="succes_error_reporter"></div>`;
+for(let i = 0; i < reqFormCaller.length; i++) {
+    reqFormCaller[i].addEventListener('click', reqFormDisplay);
+}
 function reqFormDisplay() {
     reqContainer.style.display = "block";
     cvr.style.display = "block";
@@ -409,7 +410,7 @@ function clsFunc3() {
 
 
 //Получить презентацию
-let presFormCaller = document.querySelector('.download');
+/*let presFormCaller = document.querySelector('.download');
 let presContainer = document.querySelector('.presForm');
 let presFormInner = `<h3>Скачать презентацию</h3><div class="close2">x</div>
                         <form method="POST" id="get_pres_form"> 
@@ -524,4 +525,12 @@ const form1 = document.getElementById("get_pres");
         }).catch(function(error) {
             console.log(error);
         })
-});
+});*/
+
+let up_btm = document.querySelector('#up');
+up_btm.addEventListener('click', scrollTop);
+
+function scrollTop() {
+    console.log(1);
+    window.scrollTo(0, 0);
+}
