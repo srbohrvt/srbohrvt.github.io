@@ -2472,6 +2472,10 @@ footer .footer_menu_wrap {
         top: 6px;
         margin-right: 0;
     }
+
+    .cards {
+        height: 575px;
+    }
 }
 @media (max-width: 390px) {
     .span1 {
