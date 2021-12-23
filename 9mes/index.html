@@ -1,0 +1,840 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/js/plugins/swiper/swiper-bundle.min.css"/>
+
+
+    <link rel="stylesheet" href="assets/js/plugins/fancybox/fancybox.css"/>
+    
+
+    <link href="assets/css/styles.css" rel="stylesheet">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <header class="py-sm-3">
+      <div class="container">
+        <div class="row gx-0 align-items-center">
+          <div class="col-auto col-xl-4 order-2 order-xl-0">
+            <button class="_menu-btn me-xl-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+              <i class="_menu-ico"></i>             
+            </button>
+            <a href="" class="me-2 d-none d-xl-inline-block"><i class="_map-point-ico"></i></a>
+            <a href="" class="me-2 d-none d-xl-inline-block"><i class="_doctor-ico"></i></a>
+            <a href="" class="me-2 d-none d-xl-inline-block"><i class="_price-ico"></i></a>
+            <a href="" class="d-none d-xl-inline-block"><i class="_3d-ico"></i></a>
+          </div>
+          <div class="col-auto col-xl-4 _logo-wrap order-0 order-xl-1">
+            <i class="_logo mx-auto"></i>
+            <!-- <img src="assets/img/logo.svg" class="_logo" width="186" height="118" alt="logo"> -->
+          </div>
+          <div class="col col-xl-4 d-flex justify-content-center justify-content-xl-end order-1 order-xl-3">
+            <div class="d-flex d-xl-block">
+              <div class="_social-btns mb-xl-2 ms-xl-2 order-1">
+                <a href="" target="_blank"><img src="assets/img/whatsapp.svg"></a>
+                <a href="" class="_mini d-none d-xl-inline-block" target="_blank"><img src="assets/img/intagram.svg"></a>
+                <a href="" class="_mini d-none d-xl-inline-block" target="_blank"><img src="assets/img/facebook.svg"></a>
+                <a href="" class="_mini d-none d-xl-inline-block" target="_blank"><img src="assets/img/vk.svg"></a>
+              </div>
+              <div class="_contacts order-xl-0 d-flex align-items-center d-xl-block">  
+                <a href="tel:+7 995 133 41 15" class="_btn--yellow-gradient me-3 me-xl-0"><i class="_phone-ico d-xl-none"></i><span class="d-none d-xl-block">+7 995 133 41 15</span></a>
+                <button class="_btn--orange-gradient me-3 me-xl-0"><i class="_booking-ico d-xl-none"></i><span class="d-none d-xl-block">Онлайн запись</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>  
+   
+    <!-- menu -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5></a>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+        </div>
+      </div>
+    </div>
+    <!-- menu -->
+
+    <main>
+      <img src="assets/img/mainbanner.jpg" class="_img-100" width="1920" height="589" alt="">
+      <section class="_services-container my-3 my-md-4 my-xl-5 mx-auto px-sm-3">
+        <div class="row">
+
+          <div class="col-sm-6 col-lg-3 mb-sm-3">
+            <div class="_service-item row g-0 align-items-center align-items-sm-start">
+              <div class="col-2 col-sm-auto me-2"><i class="_gynecology--ico me-2"></i></div>             
+              <div class="col pt-sm-3">
+                <a href="" class="d-flex align-items-center justify-content-between">
+                  <h5 class="_title">Гинекология</h5> 
+                  <i class="_arrow-r-ico d-sm-none"></i>
+                </a>
+                <p class="d-none d-sm-block">Прием гинеколога, Детский гинеколог, Гинеколог-гематолог, Гинекологические услуги, Планирование беременности, Лечение невынашивания, Лечение бесплодия.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-3 mb-sm-3">
+            <div class="_service-item row g-0 align-items-center align-items-sm-start">
+              <div class="col-2 col-sm-auto me-2"><i class="_pregnancy--ico"></i></div>             
+              <div class="col pt-sm-3">
+                <a href="" class="d-flex align-items-center justify-content-between">
+                  <h5 class="_title">Ведение беременности</h5> 
+                  <i class="_arrow-r-ico d-sm-none"></i>
+                </a>
+                <p class="d-none d-sm-block">Программы ведения беременности, Путеводитель по беременности, Школа будущих мам, Сопровождение беременности высокого риска.</p>
+              </div>
+            </div>
+          </div> 
+
+          <div class="col-sm-6 col-lg-3 mb-sm-3">
+            <div class="_service-item row g-0 align-items-center align-items-sm-start">
+              <div class="col-2 col-sm-auto me-2"><i class="_ultrasound--ico"></i></div>             
+              <div class="col pt-sm-3">
+                <a href="" class="d-flex align-items-center justify-content-between">
+                  <h5 class="_title">УЗИ</h5> 
+                  <i class="_arrow-r-ico d-sm-none"></i>
+                </a>
+                <p class="d-none d-sm-block">УЗИ при беременности, УЗИ в гинекологии, УЗИ детям, УЗИ внутренних органов, УЗИ сердца, УЗИ молочных желез, УЗИ щитовидной железы, УЗИ суставов.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-3 mb-sm-3">
+            <div class="_service-item row g-0 align-items-center align-items-sm-start">
+              <div class="col-2 col-sm-auto me-2"><i class="_pediatrics--ico"></i></div>             
+              <div class="col pt-sm-3">
+                <a href="" class="d-flex align-items-center justify-content-between">
+                  <h5 class="_title">Педиатрия</h5> 
+                  <i class="_arrow-r-ico d-sm-none"></i>
+                </a>
+                <p class="d-none d-sm-block">Детские врачи, Программа для детей, Вызов педиатра на дом, Календарь развития ребенка, Вакцинация.</p>
+              </div>
+            </div>
+          </div>  
+
+          <div class="col-sm-6 col-lg-3">
+            <div class="_service-item row g-0 align-items-center align-items-sm-start">
+              <div class="col-2 col-sm-auto me-2"><i class="_analyzes--ico"></i></div>             
+              <div class="col pt-sm-3">
+                <a href="" class="d-flex align-items-center justify-content-between">
+                  <h5 class="_title">Анализы и процедуры</h5> 
+                  <i class="_arrow-r-ico d-sm-none"></i>
+                </a>
+                <p class="d-none d-sm-block">Правила подготовки к лабораторным анализам, Прайс-лист на анализы и процедуры.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-3">
+            <div class="_service-item row g-0 align-items-center align-items-sm-start">
+              <div class="col-2 col-sm-auto me-2"><i class="_examination--ico"></i></div>             
+              <div class="col pt-sm-3">
+                <a href="" class="d-flex align-items-center justify-content-between">
+                  <h5 class="_title">Обследование беременных</h5> 
+                  <i class="_arrow-r-ico d-sm-none"></i>
+                </a>
+                <p class="d-none d-sm-block">Я беременна, Кардиотокография, Генетические исследования, Форма 27, Буду папой, Определение резус-фактора, Скрининг 1 триместра, Скрининг 2 триместра, Тест на околоплодные воды.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-3">
+            <div class="_service-item row g-0 align-items-center align-items-sm-start">
+              <div class="col-2 col-sm-auto me-2"><i class="_check-up--ico"></i></div>             
+              <div class="col pt-sm-3">
+                <a href="" class="d-flex align-items-center justify-content-between">
+                  <h5 class="_title">Программы Чек-ап</h5> 
+                  <i class="_arrow-r-ico d-sm-none"></i>
+                </a>
+                <p class="d-none d-sm-block">Скрининг гинекологический «Start», Check-up «Standard», Check-up «Onco-stop», Check-up «All inclusive» для женщин, Check-up «All inclusive» для мужчин</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-3">
+            <div class="_service-item row g-0 align-items-center align-items-sm-start">
+              <div class="col-2 col-sm-auto me-2"><i class="_price--ico"></i></div>             
+              <div class="col pt-sm-3">
+                <a href="" class="d-flex align-items-center justify-content-between">
+                  <h5 class="_title">Цены на услуги</h5> 
+                  <i class="_arrow-r-ico d-sm-none"></i>
+                </a>
+                <p class="d-none d-sm-block">Гинекология, УЗИ, Педиатрия, Ведение беременности, Вакцинация, Анализы и процедуры, Акции.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="_greeting-block _bg-grey">
+          <div class="row g-0 align-items-center">
+            <div class="col col-lg-7 px-4 px-md-5 py-5">
+              <h2 class="h5 _gradient-text">Добро пожаловать</h2>
+              <h3 class="h2">Познакомимся?</h3>
+              <p class="py-3 py-sm-5">Эмпатия, деликатное отношение к пациентам и высокий профессионализм - это всё наши врачи!  Мы смогли создать в клинике особенную атмосферу уюта, заботы, доверия и спокойствия. Наша цель – стать «своим врачом» для всех пациенток, что обращаются к нам за помощью.</p>
+              <button class="_btn--green-gradient d-block mx-auto">Записаться на приём</button>
+            </div>
+            <div class="col-sm d-none d-lg-block">
+              <img src="assets/img/doctors.jpg" class="w-100 h-100" width="855" height="688" alt="врачи клиники 9 месяцев">
+            </div>
+          </div>
+      </section>
+
+      <section class="my-5">
+        <h2 class="h4 _gradient-text my-4 my-lg-5">Создавать счастье здоровой жизни для поколения семей</h2>
+        <h3 class="h2 mb-4">Наши ценности</h3>
+  
+        <div class="swiper _values-slider _slides-h-auto _cards-slider pb-5">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="_advantage-card">
+                <h4 class="_title">Безопасность</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <div class="_advantage-card">
+                <h4 class="_title">Безопасность</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>  
+
+            <div class="swiper-slide">
+              <div class="_advantage-card">
+                <h4 class="_title">Безопасность</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>  
+
+            <div class="swiper-slide">
+              <div class="_advantage-card">
+                <h4 class="_title">Безопасность</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>  
+
+            <div class="swiper-slide">
+              <div class="_advantage-card">
+                <h4 class="_title">Безопасность</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>  
+
+            <div class="swiper-slide">
+              <div class="_advantage-card">
+                <h4 class="_title">Безопасность</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>  
+
+            <div class="swiper-slide">
+              <div class="_advantage-card">
+                <h4 class="_title">Безопасность</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>  
+
+            <div class="swiper-slide">
+              <div class="_advantage-card">
+                <h4 class="_title">Безопасность</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>  
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </section>
+
+      <section class="_bg-yellow _mobile-app py-5">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 col-sm-7 offset-sm-5">
+              <h2 class="text-center text-sm-start text-white mb-5">Мобильное приложение &laquo;9&nbsp;Месяцев&raquo;</h2>
+              <div class="mb-5 pb-3 pb-sm-5 _block-description">
+                <p>Мы пользуемся уникальной медицинской информационной системой – это упрощает работу сотрудникам и экономит Ваши деньги. А мобильное приложение и личный кабинет по достоинству оценили наши пациенты.</p>
+
+                <p>Возможности:</p> 
+                <ul>
+                  <li>Онлайн запись на прием 24 часа в сутки</li>
+                  <li>Доступ к личной медицинской карте, включая консультации врачей и лабораторные исследования</li>
+                  <li>Информация о ваших активных записях на прием</li>
+                  <li>Индивидуальный план диагностики и лечения по комплексным программам</li>
+                </ul>
+              </div>
+
+            </div>
+            <div class="col-12">
+                <div class="row">
+                  <div class="col-6 col-sm-5">
+                    <img src="assets/img/iPhone-11-Mockup.png" class="_phone-img" width="680" height="498" alt="">
+                  </div>
+                  <div class="col-6 col-sm-7 text-center _stores-btns">
+                      <a href=""><img src="assets/img/google-play.svg" class="img-fluid mb-2 mb-sm-0 me-sm-3" width="200" height="66" alt="Google Play"></a>
+                      <a href=""><img src="assets/img/app-store.svg" class="img-fluid" width="200" height="66" alt="App Store"></a>
+                  </div>
+                </div>  
+            </div>  
+          </div>
+        </div> 
+      </section>
+
+      <section class="_yellow-circle-right mt-3 mt-sm-5 pt-3 pt-sm-5">
+        <div class="container">
+          <h2 class="my-3 my-sm-5">Мы хотим малыша!</h2>
+          <p class="_block-description text-center my-3 my-sm-5 py-3">Мечтаете стать мамой? Мы знаем, как сделать, чтобы момент ожидания малыша стал одним из самых счастливых в вашей жизни! Волнуетесь? Ведение беременности организовано так, что с нами вы будете чувствовать поддержку все 9 месяцев ожидания малыша. Вы всегда можете задать вопросы и получить понятные ответы. Времени приема хватит!  И даже позвонить врачу, ведущему вашу беременность. А Школа будущих мам подготовит вас к родам и уходу за новорожденным.</p>
+
+
+          <div class="swiper _simple-slider _slides-h-auto _cards-slider pb-5">
+            <div class="swiper-wrapper">
+  
+              <div class="swiper-slide">
+                <div class="_service-card">
+                  <img src="assets/img/services/planning.jpg" width="405" height="256" alt="Планирование">
+                  <div class="_descriprion">
+                    <h4 class="my-4">Планирование</h4>
+                    <p>Рекомендации по результатам программы подготовят организм женщины к успешному зачатию и вынашиванию </p>
+                  </div>
+                  <a href="#" class="stretched-link"></a>
+                </div>
+              </div>  
+              <div class="swiper-slide">
+                <div class="_service-card">
+                  <img src="assets/img/services/pregnant.jpg" width="405" height="256" alt="Я беременна">
+                  <div class="_descriprion">
+                    <h4 class="my-4">Я беременна</h4>
+                    <p>Обследования по приказу Минздрава, с рекомендованным экспертами пакетом диагностики и большим количество консультаций.</p>
+                  </div>
+                  <a href="#" class="stretched-link"></a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="_service-card">
+                  <img src="assets/img/services/pregnancy-management.jpg" width="405" height="256" alt="Ведение беременности">
+                  <div class="_descriprion">
+                    <h4 class="my-4">Ведение беременности</h4>
+                    <p>Максимальный пакет. Рекомендовано для сопровождения беременности высокого риска.</p>
+                  </div>
+                  <a href="#" class="stretched-link"></a>
+                </div>
+              </div>
+
+            </div>
+          </div>   
+
+        </div>
+      </section>
+
+      <section class="mt-3 mt-xl-5 _ariadna-vertical">
+        <div class="container">
+          <h2 class="my-3 my-sm-5">Малыш родился!</h2>
+          <p class="_block-description text-center my-3 my-sm-5 py-3">Чудо случилось – родился ребенок! Но у родителей появилось миллион вопросов о здоровье и уходе! И тут клиника «9 месяцев» приходит на помощь: патронаж новорожденного, вызов педиатра на дом, прием педиатра и детских врачей-специалистов в клинике – полное педиатрическое сопровождение вашего малыша с первых дней жизни.</p>
+
+
+          <div class="swiper _simple-slider _slides-h-auto _cards-slider pb-5">
+            <div class="swiper-wrapper">
+  
+              <div class="swiper-slide">
+                <div class="_service-card">
+                  <img src="assets/img/services/pediatrics-programs.jpg" width="405" height="256" alt="Планирование">
+                  <div class="_descriprion">
+                    <h4 class="my-4">Программы педиатрии</h4>
+                    <p>Обследование детей от 1 месяца до 18 лет. В детский сад, в школу!</p>
+                  </div>
+                  <a href="#" class="stretched-link"></a>
+                </div>
+              </div>  
+              <div class="swiper-slide">
+                <div class="_service-card">
+                  <img src="assets/img/services/pediatrician.jpg" width="405" height="256" alt="Я беременна">
+                  <div class="_descriprion">
+                    <h4 class="my-4">Прием педиатра</h4>
+                    <p>Выберите для малыша своего педиатра! Сопровождение педиатром от рождения до 18 лет. </p>
+                  </div>
+                  <a href="#" class="stretched-link"></a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="_service-card">
+                  <img src="assets/img/services/vaccination.jpg" width="405" height="256" alt="Ведение беременности">
+                  <div class="_descriprion">
+                    <h4 class="my-4">Вакцинация</h4>
+                    <p>Надежная и безопасная защита от детских заболеваний и инфекций. Осмотр педиатра и общий анализ крови входит в стоимость.</p>
+                  </div>
+                  <a href="#" class="stretched-link"></a>
+                </div>
+              </div>
+
+            </div>
+          </div>  
+          
+        </div>
+      </section>
+
+      <section class="mt-3 mt-xl-5">
+          <div class="container mb-5">
+            <h2 class="my-3 my-sm-5">Программы Check-up для всей семьи</h2>
+            <p class="_block-description text-center">От состояния здоровья зависит качество нашей жизни. Мы хотим сделать так, чтобы следить за своим здоровьем стало привычным делом. Ежегодные Чек-апы – вот основа хорошего самочувствия, бодрости и долголетия. Более 20 программ обследования для любого члена семьи!</p>
+          </div> 
+          <div class="container-fluid _programs-slider-wrap">
+            <div class="swiper _programs-slider">
+              <div class="swiper-wrapper">
+    
+                <div class="swiper-slide">
+                  <div class="_program-slide">
+                    <div class="_slide-content">
+                        <div class="_title-block">
+                           <i class="_children-ico"></i>
+                           <h4>Программы для детей</h4> 
+                        </div>  
+                        <div class="_preview-content">             
+                          <ul class="list-unstyled _numbered-list">
+                            <li><span class="_list-number">1</span> Check-up для мальчиков и девочек с рождения и до 18 лет</li>
+                            <li><span class="_list-number">2</span> Check-up для девочек и девушек от 12 до 18 лет</li>
+                            <li><span class="_list-number">3</span> Check-up для юношейс 12 до 18 лет</li>
+                          </ul>
+                       </div>  
+                       <div class="_full-content">
+
+                        <!-- subslider -->
+                        <div class="swiper _programs-subslider">
+                          <div class="swiper-wrapper mb-5 pb-5">
+
+                            <div class="swiper-slide">
+
+                                <h4 class="_title mb-3 py-3">Check-up для мальчиков и девочек с рождения и до 18 лет</h4>
+                                
+                                <p>Программа предназначена для регулярного прохождения каждой женщине при визите к своему гинекологу.
+                                  Включает в себя базовый набор исследований в гинекологии: УЗИ органов малого таза, кольпоскопию, мазки на микрофлору и онкоцитологию и консультацию гинеколога.
+                                </p>
+                                <p>Мы рекомендуем проходить данную программу всем женщинам старше 18 лет, особенно это важно тем, у кого нерегулярный менструальный цикл, хронические воспалительные процессы и проблемы в репродуктивной сфере.</p>
+              
+                                <p>У акушеров-гинекологов Садриевой А.Х. и Алексеевой И.М. стоимость <span class="text-decoration-line-through">4050</span> руб. / <b class="_text-orange h4">3500</b> руб.</p>
+                                
+                                <p>Стоимость контракта <span class="text-decoration-line-through">3550</span> руб. / <b class="_text-orange h4">2900</b> руб.</p>
+                                <div class="text-center mt-4">
+                                  <a href="#" class="_btn--green d-inline-block">Подробнее</a>
+                                </div>
+                      
+                            </div>
+
+                            <div class="swiper-slide">
+                              <h4 class="_title mb-3 py-3">Slide 2</h4>
+                              Slide 2
+                           </div>
+
+                            <div class="swiper-slide">
+                              <h4 class="_title mb-3 py-3">Slide 3</h4>
+                              Slide 3
+                            </div>
+
+                          </div>
+                          <div class="swiper-button-prev"></div>                                                     
+                          <div class="swiper-button-next"></div>
+                          <div class="swiper-pagination"></div>
+                        </div>
+                        <!-- end subslider -->
+
+                       </div>
+
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="swiper-slide">
+                  <div class="_program-slide">
+                    <div class="_slide-content">
+    
+                      <div class="_title-block">
+                        <i class="_for-women-ico"></i>
+                        <h4>Программы для женщин</h4> 
+                      </div>  
+
+                      <div class="_preview-content">
+                        <ul class="list-unstyled _numbered-list">
+                          <li><span class="_list-number">1</span> Check-up «Start»/li>
+                          <li><span class="_list-number">2</span> Check-up «Start»</li>
+                          <li><span class="_list-number">3</span> Check-up для 12 до 18 лет</li>
+                        </ul>
+                      </div>
+                      
+                      <div class="_full-content">
+                        <!-- subslider -->
+                        <div class="swiper _programs-subslider">
+                          <div class="swiper-wrapper mb-5 pb-5">
+
+                            <div class="swiper-slide">
+                                
+                                <h4 class="_title mb-3 py-3">Check-up «Start»</h4>
+
+                                <p>Программа предназначена для регулярного прохождения каждой женщине при визите к своему гинекологу.
+                                  Включает в себя базовый набор исследований в гинекологии: УЗИ органов малого таза, кольпоскопию, мазки на микрофлору и онкоцитологию и консультацию гинеколога.
+                                </p>
+                                <p>Мы рекомендуем проходить данную программу всем женщинам старше 18 лет, особенно это важно тем, у кого нерегулярный менструальный цикл, хронические воспалительные процессы и проблемы в репродуктивной сфере.</p>
+              
+                                <p>У акушеров-гинекологов Садриевой А.Х. и Алексеевой И.М. стоимость <span class="text-decoration-line-through">4050</span> руб. / <b class="_text-orange h4">3500</b> руб.</p>
+                                
+                                <p>Стоимость контракта <span class="text-decoration-line-through">3550</span> руб. / <b class="_text-orange h4">2900</b> руб.</p>
+                                <div class="text-center mt-4">
+                                  <a href="#" class="_btn--green d-inline-block">Подробнее</a>
+                                </div>
+                      
+                            </div>
+
+                            <div class="swiper-slide">
+                                <h4 class="_title mb-3 py-3"> Slide 2</h4>
+                                Slide 2
+                            </div>
+
+                            <div class="swiper-slide">
+                              <h4 class="_title mb-3 py-3"> Slide 3</h4>
+                              Slide 3
+                            </div>
+
+                          </div>
+                          <div class="swiper-button-prev"></div>                                                      
+                          <div class="swiper-button-next"></div>
+                          <div class="swiper-pagination"></div>
+                        </div>
+                        <!-- end subslider -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="swiper-slide">
+                  <div class="_program-slide">
+                    <div class="_slide-content">
+
+                        <div class="_title-block">
+                          <i class="_for-men-ico"></i>
+                          <h4>Программы для мужчин</h4> 
+                        </div>  
+
+                        <div class="_preview-content">                
+                          <ul class="list-unstyled _numbered-list">
+                            <li><span class="_list-number">1</span> Check-up «All inclusive»</li>
+                            <li><span class="_list-number">2</span> Check-up «Узнайте причины лишнего веса»</li>
+                            <li><span class="_list-number">3</span> Check-up  «Здоровое сердце»</li>
+                            <li><span class="_list-number">4</span> Check-up  «Давление в норме!»</li>
+                          </ul>
+                        </div>
+
+                        <div class="_full-content">
+
+                          <!-- subslider -->
+                          <div class="swiper _programs-subslider">
+                            <div class="swiper-wrapper mb-5 pb-5">
+  
+                              <div class="swiper-slide">
+                                  <h4 class="_title mb-3 py-3"> Check-up «All inclusive»</h4>
+                        
+                                  <p>Программа предназначена для регулярного прохождения каждой женщине при визите к своему гинекологу.
+                                    Включает в себя базовый набор исследований в гинекологии: УЗИ органов малого таза, кольпоскопию, мазки на микрофлору и онкоцитологию и консультацию гинеколога.
+                                  </p>
+                                  <p>Мы рекомендуем проходить данную программу всем женщинам старше 18 лет, особенно это важно тем, у кого нерегулярный менструальный цикл, хронические воспалительные процессы и проблемы в репродуктивной сфере.</p>
+                
+                                  <p>У акушеров-гинекологов Садриевой А.Х. и Алексеевой И.М. стоимость <span class="text-decoration-line-through">4050</span> руб. / <b class="_text-orange h4">3500</b> руб.</p>
+                                  
+                                  <p>Стоимость контракта <span class="text-decoration-line-through">3550</span> руб. / <b class="_text-orange h4">2900</b> руб.</p>
+                                  <div class="text-center mt-4">
+                                    <a href="#" class="_btn--green d-inline-block">Подробнее</a>
+                                  </div>
+                        
+                              </div>
+  
+                              <div class="swiper-slide">
+                                  <h4 class="_title mb-3 py-3"> Check-up «Узнайте причины лишнего веса»</h4>
+                                  Slide 2
+                              </div>
+  
+                              <div class="swiper-slide">
+                                                   
+                                <h4 class="_title mb-3 py-3"> Check-up  «Здоровое сердце»</h4>                                                         
+                               
+                                Slide 3
+                              </div>
+  
+                            </div>
+                            <div class="swiper-button-prev"></div>                              
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-pagination"></div>
+                          </div>
+                          <!-- end subslider -->
+  
+                         </div>
+                    </div>
+                  </div>  
+                </div>
+    
+              </div>
+
+
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev d-none d-sm-block"></div>
+            <div class="swiper-button-next d-none d-sm-block"></div>
+          </div>
+      </section>
+
+
+      <section class="mt-3 mt-xl-5">
+        <div class="container mb-5">
+          <h2 class="my-3 my-sm-5">Самые красивые мамы</h2>
+          <p class="_block-description text-center">Наши мамы самые красивые. Мы любим их, бережем и заботимся о них, радуемся вместе с ними счастливому окончанию пути в 9 месяцев. С большим удовольствием делимся фотографиями наших мамочек!</p>
+        </div> 
+        
+        <div class="swiper _gallery-slider pb-5">
+          <div class="swiper-wrapper _lightbox">
+
+            <div class="swiper-slide">
+              <a href="assets/img/example/foto7.jpg">
+                  <img alt=".." src="assets/img/example/foto7.jpg" class="_img-100"/>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="assets/img/example/DSC_0260 2.jpg">
+                <img alt=".." src="assets/img/example/DSC_0260 2.jpg" class="_img-100"/>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="assets/img/example/foto7.jpg">
+                  <img alt=".." src="assets/img/example/foto7.jpg" class="_img-100"/>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="assets/img/example/DSC_0260 2.jpg">
+                <img alt=".." src="assets/img/example/DSC_0260 2.jpg" class="_img-100"/>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="assets/img/example/foto7.jpg">
+                  <img alt=".." src="assets/img/example/foto7.jpg" class="_img-100"/>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="assets/img/example/DSC_0260 2.jpg">
+                <img alt=".." src="assets/img/example/DSC_0260 2.jpg" class="_img-100"/>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="assets/img/example/foto7.jpg">
+                  <img alt=".." src="assets/img/example/foto7.jpg" class="_img-100"/>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="assets/img/example/DSC_0260 2.jpg">
+                <img alt=".." src="assets/img/example/DSC_0260 2.jpg" class="_img-100"/>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="assets/img/example/foto7.jpg">
+                  <img alt=".." src="assets/img/example/foto7.jpg" class="_img-100"/>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="assets/img/example/DSC_0260 2.jpg">
+                <img alt=".." src="assets/img/example/DSC_0260 2.jpg" class="_img-100"/>
+              </a>
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </section>  
+
+      <section class="container mt-3 mt-xl-5">
+        
+        <h2 class="my-3 my-sm-5">Акции</h2>
+        <div class="_promotions">
+          <div class="swiper _simple-slider _cards-slider _slides-h-auto pb-5">
+            <div class="swiper-wrapper">
+
+            
+              <div class="swiper-slide">
+                <div class="_promotion-card">
+                  <div class="_title">
+                    <h4>Программа "Я иду в детский сад! Я иду в школу!"</h4>
+                  </div>
+                  <div class="_descriprion">
+                    <p>Программа расширенного обследования детей</p>
+                    <p>Лабораторные исследования  в Подарок!</p>
+                    <div class="my-4">
+                      <span class="text-decoration-line-through">3550</span> / <b class="_text-green h4">2900</b> руб
+                    </div>                
+                  </div>
+                  <div class="text-center _more-btn"><a href="#" class="_btn-link">Подробнее</a></div>
+                </div>
+              </div>
+            
+
+              <div class="swiper-slide">
+                <div class="_promotion-card">
+                  <div class="_title">
+                    <h4>Программа "Я иду в детский сад! Я иду в школу!"</h4>
+                  </div>
+                  <div class="_descriprion">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="my-4">
+                      <span class="text-decoration-line-through">3550</span> / <b class="_text-green h4">2900</b> руб
+                    </div>                
+                  </div>
+                  <div class="text-center _more-btn"><a href="#" class="_btn-link">Подробнее</a></div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="_promotion-card">
+                  <div class="_title">
+                    <h4>Программа "Я иду в детский сад! Я иду в школу!"</h4>
+                  </div>
+                  <div class="_descriprion">
+                    <p>Программа расширенного обследования детей</p>
+                    <p>Лабораторные исследования  в Подарок!</p>
+                    <div class="my-4">
+                      <span class="text-decoration-line-through">3550</span> / <b class="_text-green h4">2900</b> руб
+                    </div>                
+                  </div>
+                  <div class="text-center _more-btn"><a href="#" class="_btn-link">Подробнее</a></div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="_promotion-card">
+                  <div class="_title">
+                    <h4>Программа "Я иду в детский сад! Я иду в школу!"</h4>
+                  </div>
+                  <div class="_descriprion">
+                    <p>Программа расширенного обследования детей</p>
+                    <p>Лабораторные исследования  в Подарок!</p>
+                    <div class="my-4">
+                      <span class="text-decoration-line-through">3550</span> / <b class="_text-green h4">2900</b> руб
+                    </div>                
+                  </div>
+                  <div class="text-center _more-btn"><a href="#" class="_btn-link">Подробнее</a></div>
+                </div>
+              </div>
+
+    
+            </div>  
+          </div>
+          <div class="swiper-button-prev d-none d-sm-block"></div>
+          <div class="swiper-button-next d-none d-sm-block"></div> 
+        </div>
+      </section>
+
+      <section class="_circles-decoration mt-3 mt-xl-5 pt-3 pt-xl-5">
+        <div class="container">
+          <p><b>Клиника «9 Месяцев» была создана в 2011 году 9 сентября</b></p>
+
+          <p>Обладая большим профессиональным опытом в сфере акушерства-гинекологии и педиатрии, с самого открытия мы оказываем высококвалифицированное лечение на этапах беременности, материнства и детства.</p>
+
+          <p>Клиника «9 Месяцев» для клиентов — это профессионализм в лечении в сочетании с комфортом в обслуживании, что накладывает особую ответственность на деятельность компании и является стимулом для постоянного развития и совершенствования.</p>
+
+          <p>Мы работаем, чтобы дети рождались здоровыми, а семьи становились счастливее.</p>
+          <ul class="_marked-list">
+            <li>Мы стремимся к тому, чтобы каждый пациент был доволен каждым визитом в Клинику «9 Месяцев»;</li>
+            <li>Мы строим отношения с клиентами на долгосрочной взаимовыгодной основе, чтобы все пациенты клиники оставались надолго ее верными друзьями;</li>
+            <li>Мы лечим пациентов в строгом соответствии со стандартами доказательной медицины, с законодательством РФ и приказам Министерства Здравоохранения;</li>
+            <li>Мы не платим сотрудникам за назначенные обследования, поэтому пациенты получают только действительно необходимое лечение;</li>
+            <li>Мы с уважением относимся ко всем коллегам независимо от должности и статуса, способствуем их профессиональному росту и совершенствованию;</li>
+            <li>Мы уважаем мнение клиентов, партнеров и конкурентов, относимся к критике как к стимулу еще больше улучшить нашу работу;</li>
+            <li>Мы никогда не стоим на месте и всегда ищем возможности для дальнейшего развития.</li>
+          </ul>  
+        </div>
+      </section>
+
+    </main>
+    <footer>
+      <!-- <img src="assets/img/logo.svg" class="_logo d-block mx-auto my-4" width="186" height="118" alt="logo"> -->
+      <i class="_logo my-4 mx-auto"></i>
+      <div class="_footer-bg py-5">
+        <div class="container _footer-content">
+          <div class="row">
+            <div class="col-sm-8">
+              <a href="tel:+7 (843) 207-04-40" class="_phone">+7 (843) 207-04-40</a>
+              <p class="_offer my-5">Вся представленная на сайте информация, касающаяся стоимости, носит информационный характер и ни при каких условиях не является публичной офертой. Точную стоимость можно уточнить у наших менеджеров по телефону +7 (843) 207-04-40</p>
+            </div>
+            <div class="col-sm-4">
+              <p>Наши адреса:<br> 
+              Казань, пр. Победы, 152/33<br>
+              ул. Маяковского, 30</p>
+
+              <p>График работы:<br>
+              Пн.-Пт.: 7.30 - 20.00<br>
+              Сб.: 9.00 - 18.00<br>
+              Вс.: 9.00 - 14.00</p>      
+            </div>
+          </div>
+
+          <div class="row align-items-center">
+            <div class="col-sm-8">
+              <div class="_social-btns mb-3 mb-sm-0">
+                <a href="" class="_mini" target="_blank"><img src="assets/img/whatsapp.svg"></a>
+                <a href="" class="_mini" target="_blank"><img src="assets/img/intagram.svg"></a>
+                <a href="" class="_mini" target="_blank"><img src="assets/img/facebook.svg"></a>
+                <a href="" class="_mini" target="_blank"><img src="assets/img/vk.svg"></a>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="d-flex">
+                <div class="me-2"><a href=""><img src="assets/img/google-play.svg" class="img-fluid" width="150" height="45" alt="Google Play"></a></div>
+                <div><a href=""><img src="assets/img/app-store.svg" class="img-fluid" width="150" height="45" alt="App Store"></a></div> 
+              </div>  
+            </div>  
+          </div>
+
+          <div class="row align-items-center my-2">
+            <div class="col-sm-8 order-1 order-sm-0">
+              Клиника “9 Месяцев” © Copyrights <span class="_year"></span>
+            </div>
+            <div class="col-sm-4 order-0 order-sm-1 my-3 my-sm-0">
+              <a href="#" target="_blank">Политика конфидециальности</a>
+            </div>
+          </div>
+          
+
+          <p class="text-uppercase text-center h6 mt-5 my-sm-5"><b>О возможных противопоказаниях необходимо проконсультироваться с врачом</b></p>
+
+        </div>
+      </div>
+    </footer>  
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="assets/js/plugins/swiper/swiper-bundle.min.js"></script>
+
+    <script src="assets/js/plugins/fancybox/fancybox.umd.js"></script>
+
+    <script src="assets/js/scripts.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
