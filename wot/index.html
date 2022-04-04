@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <title>Подбор оборудования</title>
+</head>
+
+<body>
+    <div class="blur"></div>
+    <div class="blur2"></div>
+    <div class="content">
+    <section>
+        <p style="margin-top: 0">Выберите стиль игры:</p>
+        <select name="select" id="select">
+            <option value="line1">Агрессивно на 1 линии</option>
+            <option value="line2">Поддержка, на 2 линии</option>
+            <option value="line3">На 3 линии, избегая прямых столкновений лоб в лоб</option>
+        </select>
+    </section>
+    <section class="main">
+        <p>Введите технические характеристики техники:</p>
+        <div>
+            <label>Скорость</label><input id="skorost" type="number" placeholder="Скорость" value="35"> 
+        </div>
+        <div>
+            <label>Очки прочности</label><input id="hp" type="number" placeholder="Очки прочности" value="1750"> 
+        </div>
+        <div>
+            <label>Разовый урон</label><input id="uron" type="number" placeholder="Разовый урон" value="440"> 
+        </div>
+        <div>
+            <label>Время перезарядки</label><input id="kd" type="number" placeholder="Время перезарядки" value="9"> 
+        </div>
+        <div>
+            <label>Маневренность</label><input id="manevr" type="number" placeholder="Маневренность" value="40"> 
+        </div>
+        <div>
+            <label>Бронирование</label><input id="zaschita" type="number" placeholder="Бронирование" value="500"> 
+        </div>
+        <div>
+            <label>Обзор</label><input id="obzor" type="number" placeholder="Обзор" value="390"> 
+        </div>
+        <div>
+            <label>Маскировка</label><input id="mask" type="number" placeholder="Маскировка" value="20">
+        </div>
+    </section>
+    <button>Расчитать необходимое оборудование</button>
+    <section>
+        <p id="s" style="margin-top: 5px">Рекомендуемый стиль игры:</p>
+        <p  style="margin-top: 10px">Оборудование:</p>
+        <ul style="margin-bottom: 0; margin-top: 0;">
+            <li id="li1"></li>
+            <li id="li3"></li>
+            <li id="li2"></li>
+        </ul>
+    </section>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
