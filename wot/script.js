@@ -17,6 +17,8 @@ let Allvalues = [[25, 35, 50],      //skorost
                 [300, 500, 750],    //zaschita
                 [350, 390, 405],    //obzor
                 [10, 20, 30]];      //mask
+
+
 let names = [   "Увеличение максимальной скорости", 
                 "Увеличение очков прочности", 
                 "Увеличение урона", 
@@ -27,9 +29,11 @@ let names = [   "Увеличение максимальной скорости"
                 "Улучшение маскировки"  ];
 
 let idNames = [0,1,2,3,4,5,6,7];
-
+let box = document.querySelector('.sorted');
 document.querySelector('button').addEventListener('click', start);
 function start() {
+    box.innerHTML = '';
+
     skorost = document.querySelector('#skorost').value;
     hp = document.querySelector('#hp').value;
     uron = document.querySelector('#uron').value;
@@ -49,6 +53,15 @@ function start() {
     parameters.push(zaschita);
     parameters.push(obzor);
     parameters.push(mask);
+
+    console.log(Allvalues)
+    let expert_inputs = document.querySelector('.e_inputs').querySelectorAll('input');
+    for (let e = 0; e < expert_inputs.length; e++) {
+        let str = expert_inputs[e].value.trim().split(',');
+        Allvalues[e] = str;
+    }
+    console.log(Allvalues)
+
 
     for(let i = 0; i < 8; i++) {
         lows[i] = Low(parameters[i], Allvalues[i]);
@@ -96,6 +109,13 @@ function start() {
     console.log("Рекомендуемый стиль игры: " + recommendedStyle);
     console.log(res);
     console.log(idNames);
+
+    
+    for (let k = 7; k >= 0; k--) {
+        let p = document.createElement("p");
+        p.innerHTML = names[idNames[k]] + ": " + medians[k];
+        box.appendChild(p);
+    }
 
     document.querySelector('#li1').innerHTML = names[idNames[7]] + ";";
     document.querySelector('#li2').innerHTML = names[idNames[6]] + ";";
@@ -200,7 +220,6 @@ function restart() {
                     [350, 390, 405], 
                     [10, 20, 30]];
     idNames = [0,1,2,3,4,5,6,7];
-
 }
 
 function BubbleSort(A)       // A - массив, который нужно

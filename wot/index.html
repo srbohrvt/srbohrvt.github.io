@@ -13,54 +13,125 @@
 
 <body>
     <div class="blur"></div>
-    <div class="blur2"></div>
-    <div class="content">
-    <section>
-        <p style="margin-top: 0">Выберите стиль игры:</p>
-        <select name="select" id="select">
-            <option value="line1">Агрессивно на 1 линии</option>
-            <option value="line2">Поддержка, на 2 линии</option>
-            <option value="line3">На 3 линии, избегая прямых столкновений лоб в лоб</option>
-        </select>
-    </section>
-    <section class="main">
-        <p>Введите технические характеристики техники:</p>
-        <div>
-            <label>Скорость</label><input id="skorost" type="number" placeholder="Скорость" value="35"> 
+    <div class="flex">
+        <div class="user">
+            <div class="blur2"></div>
+            <div class="content">
+                <section>
+                    <p style="margin-top: 0">Выберите стиль игры:</p>
+                    <select name="select" id="select">
+                        <option value="line1">Агрессивно на 1 линии</option>
+                        <option value="line2">Поддержка, на 2 линии</option>
+                        <option value="line3">На 3 линии, избегая прямых столкновений лоб в лоб</option>
+                    </select>
+                </section>
+                <section class="main">
+                    <p>Введите технические характеристики техники:</p>
+                    <div>
+                        <label>Скорость</label><input id="skorost" type="number" placeholder="Скорость" value="35"> 
+                    </div>
+                    <div>
+                        <label>Очки прочности</label><input id="hp" type="number" placeholder="Очки прочности" value="1750"> 
+                    </div>
+                    <div>
+                        <label>Разовый урон</label><input id="uron" type="number" placeholder="Разовый урон" value="440"> 
+                    </div>
+                    <div>
+                        <label>Время перезарядки</label><input id="kd" type="number" placeholder="Время перезарядки" value="9"> 
+                    </div>
+                    <div>
+                        <label>Маневренность</label><input id="manevr" type="number" placeholder="Маневренность" value="40"> 
+                    </div>
+                    <div>
+                        <label>Бронирование</label><input id="zaschita" type="number" placeholder="Бронирование" value="500"> 
+                    </div>
+                    <div>
+                        <label>Обзор</label><input id="obzor" type="number" placeholder="Обзор" value="390"> 
+                    </div>
+                    <div>
+                        <label>Маскировка</label><input id="mask" type="number" placeholder="Маскировка" value="20">
+                    </div>
+                </section>
+                <button>Расчитать необходимое оборудование</button>
+                <section>
+                    <p id="s" style="margin-top: 5px">Рекомендуемый стиль игры:</p>
+                    <p  style="margin-top: 10px">Оборудование:</p>
+                    <ul style="margin-bottom: 0; margin-top: 0;">
+                        <li id="li1"></li>
+                        <li id="li3"></li>
+                        <li id="li2"></li>
+                    </ul>
+                </section>
+            </div>
         </div>
-        <div>
-            <label>Очки прочности</label><input id="hp" type="number" placeholder="Очки прочности" value="1750"> 
+        <div class="explain">
+            <div class="add">
+                <h4><i>Оборудование с соответствующими значениями отсортированы по по рекомендации:</i></h4>
+                <div class="sorted">
+        
+                </div>
+            </div>
+            <div class="add main e_inputs">
+                <h4><i>Панель Эксперта и База знаний:</i></h4>
+                <p>Маленькое/Среднее/Высокое значение для каждого из параметров</p>
+                <div>
+                    <label>Скорость</label><input id="e_skorost" type="text" placeholder="25,35,50" value="25,35,50"> 
+                </div>
+                <div>
+                    <label>Очки прочности</label><input id="e_hp" type="text" placeholder="1600,1750,2000" value="1600,1750,2000"> 
+                </div>
+                <div>
+                    <label>Разовый урон</label><input id="e_uron" type="text" placeholder="370,440,560" value="370,440,560"> 
+                </div>
+                <div>
+                    <label>Время перезарядки</label><input id="e_kd" type="text" placeholder="6,9,13" value="6,9,13"> 
+                </div>
+                <div>
+                    <label>Маневренность</label><input id="e_manevr" type="text" placeholder="30,40,50" value="30,40,50"> 
+                </div>
+                <div>
+                    <label>Бронирование</label><input id="e_zaschita" type="text" placeholder="300,500,750" value="300,500,750"> 
+                </div>
+                <div>
+                    <label>Обзор</label><input id="e_obzor" type="text" placeholder="350,390,405" value="350,390,405"> 
+                </div>
+                <div>
+                    <label>Маскировка</label><input id="e_mask" type="text" placeholder="10,20,30" value="10,20,30">
+                </div>
+                <section class="text">
+                    <p style="margin-top: 10px;">Оборудование устанавливать Нецелесообразно/Целесообразно/Наиболее целесообразно когда его значения: <b>0.3, 0.55, 0.73</b></p>
+                    <p style="margin-top: 10px;">Оборудование, приоритетное для каждого из стиля игры по мнению эксперта:</p>
+                    <ul>
+                        <li>
+                            Агрессивно на 1 линии:
+                            <ul>
+                                <li>Бронирование</li>
+                                <li>Разовый урон</li>
+                                <li>Время перезарядки</li>
+                                <li>Очки прочности</li>
+                            </ul>
+                        </li>
+                        <li>Поддержка, на 2 линии:
+                            <ul>
+                                <li>Скорость</li>
+                                <li>Бронирование</li>
+                                <li>Время перезарядки</li>
+                            </ul>
+                        </li>
+                        <li>На 3 линии, избегая прямых столкновений лоб в лоб:
+                            <ul>
+                                <li>Скорость</li>
+                                <li>Обзор</li>
+                                <li>Маскировка</li>
+                                <li>Разовый урон</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+            </div>
         </div>
-        <div>
-            <label>Разовый урон</label><input id="uron" type="number" placeholder="Разовый урон" value="440"> 
-        </div>
-        <div>
-            <label>Время перезарядки</label><input id="kd" type="number" placeholder="Время перезарядки" value="9"> 
-        </div>
-        <div>
-            <label>Маневренность</label><input id="manevr" type="number" placeholder="Маневренность" value="40"> 
-        </div>
-        <div>
-            <label>Бронирование</label><input id="zaschita" type="number" placeholder="Бронирование" value="500"> 
-        </div>
-        <div>
-            <label>Обзор</label><input id="obzor" type="number" placeholder="Обзор" value="390"> 
-        </div>
-        <div>
-            <label>Маскировка</label><input id="mask" type="number" placeholder="Маскировка" value="20">
-        </div>
-    </section>
-    <button>Расчитать необходимое оборудование</button>
-    <section>
-        <p id="s" style="margin-top: 5px">Рекомендуемый стиль игры:</p>
-        <p  style="margin-top: 10px">Оборудование:</p>
-        <ul style="margin-bottom: 0; margin-top: 0;">
-            <li id="li1"></li>
-            <li id="li3"></li>
-            <li id="li2"></li>
-        </ul>
-    </section>
     </div>
+    
 </body>
 <script src="script.js"></script>
 

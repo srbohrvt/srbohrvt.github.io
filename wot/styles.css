@@ -59,17 +59,14 @@ input {
     left: 50%;
     transform: translateX(-50%);
 }
-.blur2 {
-    position: absolute;
+.content {
     background: rgba(255, 255, 255, 0.351);
     height: 510px;
     width: 400px;
     padding: 30px;
     backdrop-filter: blur(10px);
     z-index: 0;
-    left: 50%;
     top: 10px;
-    transform: translateX(-50%);
     border-radius: 25px;
 }
 .blur {
@@ -77,9 +74,54 @@ input {
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -10px;
+    left: -10px;
     width: 100vw;
     height: 100vh;
     z-index: -1;
+}
+
+.add {
+    background: rgba(255, 255, 255, 0.733);
+    padding: 5px 30px 5px 30px;
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12px;
+    height: 180px;
+}
+
+.add p {
+    margin-bottom: 0;
+    margin-top: 0;
+
+}
+.add h4 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight: 500;
+} 
+.explain {
+    background: rgba(255, 255, 255, 0.351);
+    height: 540px;
+    width: 400px;
+    padding: 15px 30px;
+    backdrop-filter: blur(10px);
+    z-index: 0;
+    top: 10px;
+    border-radius: 25px;
+    top: 10px;
+    position: relative;
+}
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+.e_inputs {
+    height: 330px;
+    overflow-y: scroll;
+    margin-top: 10px;
+
 }
