@@ -192,7 +192,7 @@ header {
     width: 100vw;
     overflow: hidden;
     position: relative;
-    top: -2.5rem;
+    top: -1.5rem;
     z-index: 2;
 }
 .grass svg {
