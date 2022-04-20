@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+body {
+    font-family: 'DM Sans', sans-serif !important;
+    overflow-x: hidden;
+}
+.blue {
+    color: #103359;
+}  
+.yellow {
+    color: #EBDBBB;
+}
+header {
+    z-index: 10;
+    position: fixed;
+    height: 150px;
+    width: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: linear .2s;
+}
+.white-bg {
+    background: white;
+}
+.main-menu {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    letter-spacing: -0.541667px;
+    position: fixed !important;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 150px;
+    z-index: 3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main-menu .navbar {
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+  }
+  
+  .main-menu .head-social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .main-menu .head-social i {
+    font-size: 12px;
+    width: 26px;
+    height: 24px;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: #fff;
+    color: green;
+    margin-right: 10px;
+  }
+  
+  .main-menu .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .main-menu .logo svg {
+    width: 8rem;
+  }
+  
+  .main-menu nav ul {
+    -webkit-padding-start: 0;
+            padding-inline-start: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  
+  .main-menu nav ul li {
+    white-space: nowrap;
+    display: inline-block;
+  }
+  
+  .main-menu nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  .main-menu nav ul li .nav-link {
+    padding: .5rem 1rem;
+    display: block;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  
+  .main-menu nav ul .phone-item a {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main-nav {
+      width: 100%;
+      align-items: center;
+  }
+  .navbar-nav {
+    align-items: center;
+  }
+
+.first {
+    overflow: hidden;
+    width: 100vw;
+    max-height: 100vh;
+
+}
+.first .container {
+    height: auto;
+    max-height: 100vh;
+    padding-bottom: 7rem;
+    padding-top: calc(150px + 2%);
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+}
+.img-wrap {
+    display: block;
+    width: 50%;
+    overflow: hidden;
+}
+.img-wrap img {
+    object-fit: cover;
+    width: 100%;
+}
+.animals {
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    max-height: 100vh;
+    height: calc(100% + 200px);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.animals svg {
+    min-height: 100%;
+    max-width: 120vw;
+    min-width: 100vw;
+    height: 115%;
+}
+.grass {
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    top: -2.5rem;
+    z-index: 2;
+}
+.grass svg {
+    width: 100%;
+}
+.z-index-3 {
+    position: relative;
+    z-index: 3;
+}
+
+.green-filler {
+    position: absolute;
+    width: 100vw;
+    background: #569D3F;
+}
+.second {
+    background: linear-gradient(180deg, #569D3F 0%, #266212 100%);
+    z-index: 3;
+    position: relative;
+}
+.second h2 {
+    color: white;
+    font-size: 3rem;
+    font-weight: 600;
+}
+.back1 {
+    background: linear-gradient(180deg, #3F8F26 0%, #559D3F 100%);
+    border-radius: 50%;
+    height: 17rem;
+    width: 17rem;
+}
+.item p {
+    font-weight: 600;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+}
+span.thinner {
+    font-weight: 300;
+}
+button.green {
+    background: linear-gradient(180deg, #306F1C 0%, #42902A 100%);
+    box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.41);
+    border-radius: 30px;
+    border: none;
+    color: white;
+    transition: linear .3s;
+}
+button.green:hover {
+    background: linear-gradient(180deg, #931A00 0%, #E92C03 100%);
+}
+
+.advantages {
+    position: relative;
+    top: -5rem;
+    z-index: 4;
+}
+.advantages .card {
+    width: 24%;
+    padding: 3rem;
+    height: 100%;
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 15px rgba(127, 184, 0, 0.15);
+    border-radius: 20px;
+    border: none;
+}
+.advantages .cards-row {
+    height: 22rem;
+}
+.advantages .card {
+    font-size: 1.5rem;
+}
+
+.forth {
+    background-image: url(img/back2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100wv;
+    overflow: hidden;
+}
+.forth input, .forth textarea {
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: inset 5px 4px 4px rgba(0, 0, 0, 0.16);
+    border-radius: 30px;
+    border: none;
+    color: #EBDBBB;;
+}
+.forth textarea {
+    min-height: 10rem;
+}
+input::placeholder, textarea::placeholder {
+    color: #EBDBBB;
+}
+.forth button {
+    max-width: 210px;
+}
+
+@media(max-width: 4000px) {
+    .animals {
+        bottom: 10rem;
+    }
+    .second {
+        top: -2.6rem
+    }
+}
+@media(max-width: 2500px) {
+    .animals {
+        bottom: 8rem;
+    }
+}
+@media(max-width: 2000px) {
+    .animals {
+        bottom: 6rem;
+    }
+    .green-filler {
+        top: -3rem;
+        height: 3.5rem;
+    }
+}
+@media(max-width: 1900px) {
+    .animals {
+        bottom: 5rem;
+    }
+    .second {
+        top: -3.5rem;
+    }
+}
+@media(max-width: 1700px) {
+    .animals {
+        bottom: 2rem;
+    }
+    
+}
+@media(max-width: 1670px) {
+    .animals {
+        bottom: 0;
+    }
+    .second {
+        top: -0;
+    }
+}
